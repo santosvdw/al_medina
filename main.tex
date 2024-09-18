@@ -10,8 +10,11 @@
 
 % Useful packages
 \usepackage{amsmath}
+\usepackage[export]{adjustbox}
 \usepackage{graphicx}
 \usepackage[colorlinks=true, allcolors=blue]{hyperref}
+
+\graphicspath{{"kleurenschema.png"}, {"lettertypes.png"}, {"logo.jpg"}}
 
 \title{Al Medina}
 \author{Website onderzoek}
@@ -49,6 +52,7 @@ Al Medina Cupping
 \subsection{Branche}
 Het bedrijf opereert binnen de alternatieve geneeskunde sector.
 
+\pagebreak
 
 \section{Doelgroepanalyse}
 \subsection{Demografie}
@@ -60,6 +64,13 @@ Potentiële bezoekers van de website willen:
     \item Een afspraak boeken om via alternatieve geneesmiddelen hun lichamelijke klachten te verminderen;
     \item Zich inlezen in de diensten van Al Medina om er achter te komen of de deze voor hen bestemd zijn.
 \end{enumerate}
+
+\subsection{User stories}
+\begin{itemize}
+    \item Als aanstaande klant wil ik ...
+\end{itemize}
+
+\pagebreak
 
 \section{Concurrentieanalyse}
 \subsection{\href{https://www.skinandmore.nl/}{Skin and more}} 
@@ -102,6 +113,7 @@ Sterke punten:
     \item Moderne uitstraling met mooie kopjes
     \item Goede onderscheiding tussen secties
 \end{enumerate}
+\pagebreak
 
 \section{Functionaliteiten}
 Welke functionaliteiten en informatie moet de website bevatten?
@@ -113,13 +125,116 @@ Welke functionaliteiten en informatie moet de website bevatten?
     \item De website moet informatie bevatten over contactinformatie, openingstijden en het adres.
     \item De website moet linkjes bevatten naar andere sociale media platformen van Al Medina.
 \end{enumerate}
+\pagebreak
 
 \section{Stijl en branding}
 
 \subsection{Kleuren}
 
+Het volgende kleurenschema is geselecteerd voor de website:
+
+
+\includegraphics[scale=0.28]{kleurenschema.png}
+
+\begin{itemize}
+    \item Kleur \#3EC2CC zal dienen als primaire kleur
+    \item Kleur \#0A8995 zal dienen als secundaire kleur
+    \item Kleur \#F3F7F3 zal dienen als achtergrondkleur
+    \item Kleur \#0E1116 zal dienen als tekstkleur
+\end{itemize}
+
 \subsection{Lettertypes}
 
+De volgende twee lettertypes zullen gebruikt worden op de website:
+
+\begin{itemize}
+    \item Lexend voor kopjes
+    \item Roboto voor normale tekst
+\end{itemize}
+
+Dit zal er in de praktijk zo uitzien: 
+
+\includegraphics[scale=0.6]{lettertypes.png}
+
+
 \subsection{Logo}
+Dit is het logo van Al Medina:
+
+\includegraphics[scale=0.75]{logo.jpg}
+
+\pagebreak
+
+\section{Website overzicht}
+\subsection{Pagina's}
+\begin{itemize}
+    \item Homepagina (/)
+    \item Frequently Asked Questions (/faq)
+    \item Diensten (/diensten)
+    \item Over Hijama (/hijama)
+    \item Over cupping (/cupping)
+    \item Over Massages (/massages)
+    \item Over Al Medina (/over\_ons)
+    \item Afspraak maken (/afspraak)
+    \item Contact (/contact)
+    \item Tarieven (/tarieven)
+\end{itemize}
+
+\subsection{Pagina content}
+\begin{itemize}
+    \item Homepagina: \\
+    - Wat kan je voor klanten doen? (overzicht van diensten) \\
+    - Korte introductie van Al Medina \\
+    - Nadruk op hygiëne
+    \item Frequently Asked Questions: \\
+    - Wanneer mag je geen behandeling nemen
+    - Waarvoor helpt het
+    - Andere belangrijke vragen
+    \item Diensten: \\
+    - Welke diensten biedt Al Medina aan?
+    \item Over Hijama: \\
+    - Een duidelijke uitleg over hijama \\
+    - Toelichting over de voordelen \\
+    - Wanneer mag je geen hijama doen\\
+    - Nadruk op het verband met het geloof
+    \item Over cupping: \\
+    - Een duidelijke uitleg over cupping\\
+    - Welke soorten cupping zijn er\\
+    - Voordelen van cupping\\
+    - Wanneer mag je niet cuppen
+    \item Over massages: \\
+    - Welke soorten massages zijn er
+    - Voordelen van de massages
+    \item Over Al Medina: \\
+    - Waarom is de praktijk gestart
+    \item Afspraak maken: \\
+    - Linkje naar whatsapp
+    \item Contact: \\
+    - Contactinformatie + linkjes naar social media
+    \item Tarieven: \\
+    - Lijst met alle tarieven
+    
+\end{itemize}
+\pagebreak
+\section{Technische vereisten}:
+
+Programmeertalen:
+\begin{itemize}
+    \item HTML
+    \item SCSS
+    \item Javascript
+    \item Laravel (PHP)
+\end{itemize}
+
+API's:
+\begin{itemize}
+    \item Whatsapp API voor contact opnemen
+\end{itemize}
+
+Hosting:
+\begin{itemize}
+    \item \hyperlink{https://strato.nl}{Strato}: Eerste 12 maanden 1 euro/maand, daarna 6 euro/maand. \\
+    - Inclusief domein en SSL \\
+    - Inclusief email adressen
+\end{itemize}
 
 \end{document}
