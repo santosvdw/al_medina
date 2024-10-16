@@ -1,7 +1,25 @@
-import './bootstrap';
+// import './bootstrap';
 
-import Alpine from 'alpinejs';
+// import Alpine from 'alpinejs';
 
-window.Alpine = Alpine;
+// window.Alpine = Alpine;
 
-Alpine.start();
+// Alpine.start();
+
+document.querySelectorAll(".contact-form-type button").forEach((button) => {
+    button.addEventListener("click", function (event) {
+        event.preventDefault();
+    });
+});
+
+document.querySelectorAll(".changeTypeAfspraak").forEach((button) => {
+    button.addEventListener("click", changeTypeAfspraak());
+});
+
+function changeTypeAfspraak() {
+    console.log("Afspraak maken");
+}
+
+function changeTypeVraag() {
+    console.log("Vraag stellen");
+}
