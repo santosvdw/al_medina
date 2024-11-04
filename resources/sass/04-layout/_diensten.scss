@@ -1,0 +1,71 @@
+@use "../01-usables/usables" as *;
+
+.onze-diensten {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    position: relative;
+    top: calc(-20vh + $space-l);
+
+
+    &-cards {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        width: 100%;
+
+        &-card {
+            // background-color: #d5893625;
+            width: min-content;
+            padding: 0;
+            padding-bottom: $space-m;
+
+            &-img {
+                width: fit-content;
+                height: min-content;
+                background: rgb(243, 247, 247);
+                background: linear-gradient(
+                    180deg,
+                    rgba(243, 247, 247, 0) 0%,
+                    rgba(243, 247, 247, 1) 49%,
+                    rgba(239, 231, 219, 1) 50%,
+                    rgba(239, 231, 219, 1) 100%
+                );
+                img {
+                    height: auto;
+                }
+            }
+
+            &-info {
+                background-color: #d5893625;
+                padding: 1rem;
+                text-align: center;
+
+                h5 {
+                    padding-bottom: $space-3xs;
+                    text-transform: capitalize;
+                }
+
+                p {
+                    line-height: 1.1rem;
+                    padding-bottom: 0.7rem;
+                }
+                ul {
+                    text-transform: capitalize;
+                    list-style-type: none;
+                    li {
+                        text-align: center;
+
+                        &::before {
+                            content: '- ';
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    button {
+        margin-top: $space-m;
+    }
+}

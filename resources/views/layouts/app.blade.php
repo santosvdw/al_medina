@@ -14,10 +14,7 @@
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
-    <body class="font-sans antialiased">
-        <div class="min-h-screen bg-gray-100">
-            @include('layouts.navigation')
-
+    <body>
             <!-- Page Heading -->
             <header>
                 <div class="header-title">
@@ -64,6 +61,5 @@
             <p>Al Medina &copy; 2024. Alle rechten voorbehouden.</p>
         </div>
     </footer>
-        </div>
     </body>
 </html>

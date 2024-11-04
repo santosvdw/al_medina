@@ -1,0 +1,73 @@
+@use "../01-usables/usables" as *;
+
+.contact {
+    width: 70vw;
+    background-color: $tertiary;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    place-content: center;
+    padding: $space-xl 0;
+    color: $black;
+
+    h2 {
+        text-align: center;
+    }
+
+    form {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        width: 70%;
+        gap: $space-xs;
+
+        label {
+            font-size: $text-6;
+        }
+
+        h6 {
+            font-weight: 400;
+            padding-bottom: $space-xs;
+        }
+
+        .contact-form-naam, .contact-form-behandeling, .contact-form-opmerkingen {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-flow: column wrap;
+
+            // *, *::before, *::after {
+            //     outline: 1px black solid;
+            // }
+
+            &-boxes {
+                display: inherit;
+                flex-flow: row wrap;
+                justify-content: space-between;
+                width: 100%;
+            }
+        }
+
+        textarea {
+            width: calc($space-xl * 8);
+            height: calc($space-xl * 3);
+        }
+
+        textarea, input[type="text"] {
+            outline: none;
+            border: 1px solid #29100080;
+            background-color: #EAD4C6;
+            padding: calc($space-xs * .75) $space-xs;
+
+            &:focus {
+                border: 1px solid $black;
+            }
+        }
+
+        input[type="checkbox"] {
+            &:checked {
+                background-color: $secondary;
+            }
+        }
+    }
+}

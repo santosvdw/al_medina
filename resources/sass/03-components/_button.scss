@@ -1,0 +1,20 @@
+@use '../01-usables/usables' as *;
+
+button {
+    background-color: $secondary;
+    color: $white;
+    font-size: $text-6;
+    outline: none;
+    border: none;
+    padding: 15px 35px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $primary;
+        transition: ease;
+    }
+
+    i {
+        color: $white;
+    }
+}
