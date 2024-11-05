@@ -1,0 +1,63 @@
+@use "../01-usables/usables" as *;
+
+.reviews {
+    display: grid;
+    margin-top: $space-xl;
+    justify-content: center;
+    flex-flow: column wrap;
+    background-color: #ffe9c1;
+
+    h2,
+    h5,
+    h6 {
+        text-align: center;
+    }
+
+    .reviews-header {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: center;
+
+        .starline {
+            padding: $space-m 0;
+        }
+    }
+
+    .reviews-body {
+        width: 70vw;
+        background-color: $tertiary;
+        padding: $space-m 0 calc($space-m * 2);
+
+        .reviews-cards {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-evenly;
+
+            &-card {
+                width: 25%;
+                text-align: center;
+                background-color: $white;
+                padding: $space-s $space-xs;
+
+                &-info {
+                    display: flex;
+                    flex-flow: column wrap;
+                    align-items: center;
+                    gap: $space-xs;
+                }
+            }
+        }
+    }
+    .reviews-button {
+        background-color: green;
+        display: flex;
+        height: min-content;
+        justify-content: center;
+
+        button {
+            position: absolute;
+            margin-top: -2%;
+        }
+    }
+}

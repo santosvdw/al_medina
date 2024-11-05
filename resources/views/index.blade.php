@@ -136,46 +136,62 @@
                 <button onclick="" class="italic"><i class="bi bi-whatsapp"></i> Bericht versturen via whatsapp</button>
             </form>
             <div class="contact-decor">
-                <img src="{{asset('assets/contact_decor.svg')}}" alt="{" id="left">
-                <img src="{{asset('assets/contact_decor.svg')}}" alt="}" id="right">
+                <img src="{{asset('assets/side-decor.png')}}" alt="">
             </div>
+            <div class="contact-background"></div>
         </section>
         <section class="reviews">
             <h2 class="italic">Reviews</h2>
             <div class="reviews-header">
-                <p class="italic">Al Medina ontvangt van haar klanten</p>
+                <h5 class="italic">Al Medina ontvangt van haar klanten</h5>
                 <span class="reviews-stars"></span>
-                <p class="bold">5 sterren!</p>
+                <h6 class="bold">5 sterren!</h6>
                 <span class="starline"><img src="{{asset('assets/starline.png')}}" alt="--+--"></span>
             </div>
             <div class="reviews-body">
-                <div class="reviews-button">
-                    <div class="reviews-cards">
-                        <div class="reviews-cards-card">
-                            <div class="reviews-cards-card-img"></div>
+                <div class="reviews-cards">
+                    <div class="reviews-cards-card">
                             <div class="reviews-cards-card-info">
-                                <h4 class="italic">Naam</h4>
+                                <h6 class="bold">Naam</h6>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.</p>
-                                <span class="review-cards-card-info-stars"></span>
+                                <span class="review-cards-card-info-stars">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </span>
                             </div>
                         </div>
                         <div class="reviews-cards-card">
-                            <div class="reviews-cards-card-img"></div>
                             <div class="reviews-cards-card-info">
-                                <h4 class="italic">Naam</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.</p>
-                                <span class="review-cards-card-info-stars"></span>
+                                <h6 class="bold">Naam</h6>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore dolor consequuntur officiis beatae, deserunt laborum quae itaque quidem nesciunt voluptatibus?</p>
+                                <span class="review-cards-card-info-stars">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </span>
                             </div>
                         </div>
                         <div class="reviews-cards-card">
-                            <div class="reviews-cards-card-img"></div>
                             <div class="reviews-cards-card-info">
-                                <h4 class="italic">Naam</h4>
+                                <h6 class="bold">Naam</h6>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.</p>
-                                <span class="review-cards-card-info-stars"></span>
+                                <span class="review-cards-card-info-stars">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </span>
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="reviews-button">
                     <button class="italic">Meer reviews lezen</button>
                 </div>
             </div>
