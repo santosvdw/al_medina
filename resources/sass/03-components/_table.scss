@@ -1,0 +1,13 @@
+@use "../01-usables/usables" as *;
+
+table {
+    border-collapse: collapse;
+    td {
+        padding: 2px 50px 2px 0;
+
+        &.emphasize {
+            font-weight: bold;
+            color: $secondary;
+        }
+    }
+}

@@ -1,4 +1,10 @@
+@use '../01-usables/usables' as *;
+
 .container {
     margin: 0 auto;
     width: 50vw;
+}
+
+main {
+    padding: $space-l 0;
 }
