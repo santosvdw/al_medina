@@ -1,0 +1,54 @@
+@use "../01-usables/usables" as *;
+
+nav {
+    a {
+        z-index: 100;
+    }
+    .nav-logo {
+        background-color: $white;
+        height: calc($text-6 * 3);
+        display: grid;
+        place-items: center;
+
+        * {
+            text-decoration: none;
+        }
+    }
+
+    .small-starline {
+        position: absolute;
+        height: calc($text-6 * 3);
+        width: 100vw;
+        display: grid;
+        margin: 0 auto;
+        top: calc($text-6 * 1.5);
+        place-items: center;
+        z-index: 10;
+
+        img {
+            scale: 1.1;
+        }
+    }
+
+    .nav-links {
+        background-color: $secondary;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: calc($text-6 * 3);
+        ul {
+            width: 60vw;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-evenly;
+            list-style-type: none;
+        }
+
+        a {
+            font-size: $text-6;
+            text-decoration: none;
+            color: $black;
+            font-weight: 500;
+        }
+    }
+}
