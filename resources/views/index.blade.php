@@ -28,7 +28,7 @@
                 <li><a href="/contact">contact</a></li>
             </ul>
         </nav>
-        <header>
+        <header class="home">
             <div class="header-logo"><img src="{{asset('assets/logoalmedina.png')}}" alt="Al Medina"></div>
             <div class="header-overlay"></div>
             <div class="header-img"><img src="{{asset('assets/background-header.png')}}" alt="Foto van een woestijn"></div>

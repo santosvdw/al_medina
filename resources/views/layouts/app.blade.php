@@ -7,26 +7,28 @@
 
         <title>{{ config('app.name', 'Laravel') }}</title>
 
-        <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.bunny.net">
-        <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
-
-        <!-- Scripts -->
-        @vite(['resources/css/app.css', 'resources/js/app.js'])
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+        @vite(['resources/sass/app.scss', 'resources/js/app.js'])
     </head>
     <body>
             <!-- Page Heading -->
             <header>
                 <div class="header-title">
-                    <h1>TITEL</h1>
-                    <!-- @include('partials._navigatie', ['vakken' => $vakken]) -->
+                    <h1>{{$titel}}</h1>
+                    {{-- <!-- @include('partials._navigatie', ['vakken' => $vakken]) --> --}}
                 </div>
                 <div class="header-background">
-                    <img src="{{asset('assets/header_background.png')}}" alt="header_background">
+                    <img src="{{asset('assets/'.$foto)}}" alt="{{$titel}}">
                 </div>
+            </header>
             <!-- Page Content -->
             <main>
-                @yield('content')
+                <div class="container">
+                    @yield('content')
+                </div>
             </main>
             <footer>
         <div class="footer-navigation">

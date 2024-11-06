@@ -6,6 +6,8 @@
     display: flex;
     flex-flow: column wrap;
     align-items: center;
+    position: relative;
+    left: -10vw;
     place-content: center;
     padding: $space-xl 0;
     color: $black;

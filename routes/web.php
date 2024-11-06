@@ -7,6 +7,13 @@ Route::get('/', function () {
     return view('index');
 });
 
+Route::get('/cupping', function () {
+    return view('cupping', [
+        "titel" => "Cupping",
+        "foto" => "background-regular.png",
+    ]);
+});
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');

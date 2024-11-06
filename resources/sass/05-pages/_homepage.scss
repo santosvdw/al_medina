@@ -67,10 +67,11 @@
             );
         }
 
-        header {
+        header.home {
             height: 70vh;
             display: flex;
             align-items: center;
+            background-color: none;
             justify-content: center;
             .header-img img {
                 width: 100vw;
