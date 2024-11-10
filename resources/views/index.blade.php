@@ -37,7 +37,7 @@
     </div>
     <main>
         <section class="quote">
-            <h4 class="italic">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, suscipit.,,</h4>
+            <h3 class="italic">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, suscipit.,,</h3>
             <article>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa perspiciatis delectus autem nihil nesciunt, quidem nobis sapiente quisquam laudantium praesentium odit adipisci unde numquam maxime, totam consectetur repellat? Eius ea consequatur obcaecati earum error est dolores corrupti recusandae, omnis labore dolor animi. Nisi excepturi ab, natus maiores doloremque, blanditiis ipsum vero at quasi a accusantium, totam corrupti inventore iure soluta hic! Eaque tempora deserunt neque veritatis aut, velit excepturi dignissimos.</p>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore totam repellat provident adipisci, asperiores ex repudiandae aliquam id, iusto repellendus quo laborum dolorem quia dicta dignissimos tempora laboriosam incidunt eos eligendi vero necessitatibus. Beatae exercitationem itaque nemo odio sed non eius asperiores rerum possimus repellendus. <a href="" target="_blank" rel="noopener noreferrer">Meer ontdekken</a></p>

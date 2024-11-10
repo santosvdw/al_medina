@@ -1,0 +1,7 @@
+@use '../01-usables/usables' as *;
+
+section.disclaimer {
+    font-style: italic;
+    font-weight: 600;
+    text-align: center;
+}

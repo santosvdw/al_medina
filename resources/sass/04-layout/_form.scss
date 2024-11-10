@@ -1,0 +1,31 @@
+@use "../01-usables/usables" as *;
+
+section.form {
+    form {
+        display: flex;
+        flex-flow: column wrap;
+        gap: $space-2xs;
+        h6 {
+            margin-bottom: 3px;
+        }
+
+        .behandeling {
+            display: flex;
+            flex-flow: column wrap;
+
+            label {
+                margin-left: 3px;
+            }
+        }
+
+        input[type="text"],
+        textarea {
+            padding: 5px 8px;
+        }
+
+        textarea {
+            width: clamp(200px, 60ch, 35vw);
+            height: calc($text-6 * 5);
+        }
+    }
+}

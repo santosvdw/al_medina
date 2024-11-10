@@ -17,4 +17,20 @@ button {
     i {
         color: $white;
     }
+
+    &.small-button {
+        font-size: $text-p;
+        padding: 8px 12px;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        gap: 5px;
+    }
+
+    &.black {
+        i {
+            color: $black;
+        }
+        color: $black;
+    }
 }
