@@ -1,40 +1,44 @@
 @use "../01-usables/usables" as *;
 
-header {
-    height: calc(5 * $text-2);
-    width: 100vw;
-
-    .header-title {
-        background-color: #BA935A80;
-        height: inherit;
+.regular {
+    header {
+        position: relative;
+        height: calc(5 * $text-2);
+        margin-top: calc($text-6 * 6);
         width: 100vw;
-        display: flex;
-        align-items: center;
-        backdrop-filter: blur(3px);
-        justify-content: center;
-        h1 {
-            font-size: $text-2;
-            padding: $space-xs $space-m;
-            background-color: white;
-            z-index: 1;
-            color: $black;
+
+        .header-title {
+            background-color: #ba935a80;
+            height: inherit;
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            backdrop-filter: blur(3px);
+            justify-content: center;
+            h1 {
+                font-size: $text-2;
+                padding: $space-xs $space-m;
+                background-color: white;
+                z-index: 1;
+                color: $black;
+            }
         }
-    }
 
-    .header-background {
-        width: 100vw;
-        background-color: aqua;
-        overflow: hidden;
-        margin-top: calc(-5 * $text-2);
-        height: inherit;
-        display: grid;
-        place-items: center;
-        z-index: -1;
+        .header-background {
+            width: 100vw;
+            background-color: aqua;
+            overflow: hidden;
+            margin-top: calc(-5 * $text-2);
+            height: inherit;
+            display: grid;
+            place-items: center;
+            z-index: -1;
 
-        img {
-            min-width: 100%;
-            min-height: 100%;
-            flex-shrink: 0;
+            img {
+                min-width: 100%;
+                min-height: 100%;
+                flex-shrink: 0;
+            }
         }
     }
 }

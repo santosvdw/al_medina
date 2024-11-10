@@ -23,3 +23,20 @@ function changeTypeAfspraak() {
 function changeTypeVraag() {
     console.log("Vraag stellen");
 }
+
+// write a function that toggles the visibility of a div
+// add an event listener to the button that calls the function
+document.getElementById("toggle-visibility").addEventListener("click", toggleVisibility);
+
+function toggleVisibility() {
+    console.log("toggleVisibility");
+    let element = document.getElementById("nav-menu-list-element");
+    if (element.classList.contains("open")) {
+        element.classList.remove("open");
+        element.classList.add("close");
+    }
+    else {
+        element.classList.remove("close");
+        element.classList.add("open");
+    }
+}

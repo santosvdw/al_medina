@@ -16,7 +16,7 @@
 <div class="container">
     <div class="hero home">
         <div class="upper-gradient"></div>
-        <nav>
+        <nav id="home">
             <ul>
                 <li><a href="/cupping">cupping</a></li>
                 <li><a href="/hijama">hijama</a></li>
@@ -39,8 +39,8 @@
         <section class="quote">
             <h3 class="italic">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, suscipit.,,</h3>
             <article>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa perspiciatis delectus autem nihil nesciunt, quidem nobis sapiente quisquam laudantium praesentium odit adipisci unde numquam maxime, totam consectetur repellat? Eius ea consequatur obcaecati earum error est dolores corrupti recusandae, omnis labore dolor animi. Nisi excepturi ab, natus maiores doloremque, blanditiis ipsum vero at quasi a accusantium, totam corrupti inventore iure soluta hic! Eaque tempora deserunt neque veritatis aut, velit excepturi dignissimos.</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore totam repellat provident adipisci, asperiores ex repudiandae aliquam id, iusto repellendus quo laborum dolorem quia dicta dignissimos tempora laboriosam incidunt eos eligendi vero necessitatibus. Beatae exercitationem itaque nemo odio sed non eius asperiores rerum possimus repellendus. <a href="" target="_blank" rel="noopener noreferrer">Meer ontdekken</a></p>
+                <p>Bij Al Medina helpen we onze klanten om zich beter te voelen door middel van natuurlijke therapieën zoals hijama, cupping, en verschillende massagevormen. Onze behandelingen ondersteunen het lichaam bij het herstellen van balans en gezondheid, gericht op zowel lichamelijk als geestelijk welzijn. Elk consult wordt afgestemd op jouw specifieke behoeften om optimale resultaten te bereiken. Al Medina is opgericht met de missie om natuurlijke behandelingen toegankelijk te maken voor iedereen die zoekt naar gezondheid en innerlijke rust. Wij geloven dat welzijn een recht is en willen onze klanten op een holistische manier ondersteunen. </p>
+                <p>Met respect voor islamitische principes en moderne hygiënestandaarden, streven wij naar een hoogwaardige en veilige zorgervaring. Hygiëne is een kernwaarde bij Al Medina. We volgen strikte protocollen om ervoor te zorgen dat alle instrumenten en ruimtes steriel en schoon zijn. Dit waarborgt niet alleen jouw veiligheid, maar ook ons commitment aan de hoogste kwaliteitsnormen in ons vak. <br> <a href="/over_ons">Meer lezen</a></p>
             </article>
             <span class="quote-starline">
                 <img src="{{asset('assets/starline.png')}}" alt="--+--">

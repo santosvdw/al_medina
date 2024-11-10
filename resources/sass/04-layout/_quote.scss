@@ -7,6 +7,10 @@
     flex-flow: column wrap;
     align-items: center;
 
+    h3 {
+        text-align: center;
+    }
+
     article {
         padding: $space-xs 0 $space-l;
         width: 100%;

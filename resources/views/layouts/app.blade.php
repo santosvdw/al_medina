@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <title>{{ config('app.name', 'Laravel') }}</title>
+        <title>{{$titel}} | Al Medina</title>
 
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,14 +13,14 @@
         <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
         @vite(['resources/sass/app.scss', 'resources/js/app.js'])
     </head>
-    <body>
+    <body class="regular">
         <!--Page navigation -->
         <nav>
             <div class="nav-logo">
                 <a href="/"><h5>AL MEDINA</h5></a>
             </div>
             <span class="small-starline"><img src="{{asset('assets/small_starline.png')}}" alt="--+--"></span>
-            <div class="nav-links">
+            <div class="nav-links desktop">
                 <ul>
                     <li><a href="/cupping">Cupping</a></li>
                     <li><a href="/hijama">Hijama</a></li>
@@ -29,6 +29,27 @@
                     <li><a href="/over_ons">Over ons</a></li>
                     <li><a href="/contact">Contact</a></li>
                 </ul>
+            </div>
+            <div class="nav-links mobile">
+                <div class="nav-menu-button">
+                    <span class="menu-button" id="toggle-visibility" >
+                        <i class="bi bi-list"></i>
+                    </span>
+                </div>
+                <div class="nav-menu-list" id="nav-menu-list-element">
+                    <ul>
+                        <li><a href="/cupping">Cupping</a></li>
+                        <li><a href="/hijama">Hijama</a></li>
+                        <li><a href="/massages">Massages</a></li>
+                        <li><a href="/tarieven">Tarieven</a></li>
+                        <li><a href="/over_ons">Over ons</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                        <li>
+                            <a href="/https://www.instagram.com/cuppingalmedina/"><i class="bi bi-instagram"></i></a>
+                            <a href="https://www.facebook.com/people/Cupping-Al-Medina/pfbid02za1YrvWuf9Ezy31Lshf2mVZiihRL2nCU3NbrEbbP4YPA1NrZPxku1W3ReBodTgohl/"><i class="bi bi-facebook"></i></a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
             <!-- Page Heading -->

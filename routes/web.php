@@ -14,6 +14,13 @@ Route::get('/cupping', function () {
     ]);
 });
 
+Route::get('/template', function () {
+    return view('template', [
+        "titel" => "Template",
+        "foto" => "background-regular.png",
+    ]);
+});
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
