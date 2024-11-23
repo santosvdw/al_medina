@@ -9,5 +9,17 @@ table {
             font-weight: bold;
             color: $secondary;
         }
+
+        &.colspan-3 {
+            width: 300%;
+        }
+
+        &.colspan-2 {
+            width: 50%;
+        }
+
+        &.colspan-4 {
+            width: 100%;
+        }
     }
 }

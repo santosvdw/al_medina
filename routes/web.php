@@ -14,9 +14,23 @@ Route::get('/cupping', function () {
     ]);
 });
 
+Route::get('/hijama', function () {
+    return view('hijama', [
+        "titel" => "Hijama",
+        "foto" => "background-regular.png",
+    ]);
+});
+
 Route::get('/template', function () {
     return view('template', [
         "titel" => "Template",
+        "foto" => "background-regular.png",
+    ]);
+});
+
+Route::get('/tarieven', function () {
+    return view('tarieven_en_diensten', [
+        "titel" => "Tarieven en diensten",
         "foto" => "background-regular.png",
     ]);
 });
