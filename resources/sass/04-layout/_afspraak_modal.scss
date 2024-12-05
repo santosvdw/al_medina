@@ -87,7 +87,8 @@
         width: 100vw;
         z-index: -1;
         position: absolute;
-        margin-top: 50%;
+        top: 50%;
+        // margin-top: calc(50% + $space-xl);
         height: 100vh;
         box-shadow: 0 100vh 0 #FFE9c1;
     }

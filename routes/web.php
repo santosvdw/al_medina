@@ -14,9 +14,30 @@ Route::get('/cupping', function () {
     ]);
 });
 
+Route::get('/contact', function () {
+    return view('contact', [
+        "titel" => "Contact",
+        "foto" => "background-regular.png",
+    ]);
+});
+
 Route::get('/hijama', function () {
     return view('hijama', [
         "titel" => "Hijama",
+        "foto" => "background-regular.png",
+    ]);
+});
+
+Route::get('/over_ons', function () {
+    return view('over_ons', [
+        "titel" => "Over ons",
+        "foto" => "background-regular.png",
+    ]);
+});
+
+Route::get('/massages', function () {
+    return view('massages', [
+        "titel" => "Massages",
         "foto" => "background-regular.png",
     ]);
 });
@@ -34,6 +55,14 @@ Route::get('/tarieven', function () {
         "foto" => "background-regular.png",
     ]);
 });
+
+Route::get('/faq', function () {
+    return view('faq', [
+        "titel" => "Veelgestelde vragen",
+        "foto" => "background-regular.png",
+    ]);
+});
+
 
 Route::get('/dashboard', function () {
     return view('dashboard');

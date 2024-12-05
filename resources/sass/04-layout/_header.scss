@@ -26,7 +26,7 @@
 
         .header-background {
             width: 100vw;
-            background-color: aqua;
+            background-color: $primary;
             overflow: hidden;
             margin-top: calc(-5 * $text-2);
             height: inherit;

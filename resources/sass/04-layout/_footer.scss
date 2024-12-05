@@ -1,19 +1,19 @@
 @use "../01-usables/usables" as *;
 
 footer {
-    background-color: $secondary;//#ba935a;
-    
+    background-color: $secondary; //#ba935a;
+
     .footer-navigation {
         padding: $space-m $space-s $space-xl;
         display: flex;
         flex-flow: row wrap;
         justify-content: space-evenly;
         align-items: baseline;
-        
+
         h6 {
             padding-bottom: 0.3rem;
         }
-        
+
         li {
             list-style-type: none;
             font-size: $text-6;
@@ -22,7 +22,7 @@ footer {
                 font-size: $text-6;
                 color: $black;
                 text-decoration: none;
-                
+
                 &:hover {
                     text-decoration: underline;
                     color: $black;
@@ -44,7 +44,8 @@ footer {
             width: 30%;
         }
 
-        p, a {
+        p,
+        a {
             font-size: $text-6;
         }
     }

@@ -32,5 +32,14 @@ button {
             color: $black;
         }
         color: $black;
+    } 
+
+    a {
+        color: $white;
+        text-decoration: none;
+
+        &:hover {
+            color: $white;
+        }
     }
 }

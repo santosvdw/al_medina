@@ -1,0 +1,25 @@
+@use '../01-usables/usables' as *;
+
+.contact-pagina {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: baseline;
+    justify-content: left;
+    gap: $space-xl;
+
+    section.contact-cta {
+        width: fit-content;
+    }
+    section.form {
+        border-left: 1px solid $secondary;
+        padding-left: $space-xl;
+        width: fit-content;
+    }
+}
+
+#map {
+    iframe {
+        width: 50vw;
+        min-width: 300px;
+    }
+}

@@ -37,7 +37,7 @@
     </div>
     <main>
         <section class="quote">
-            <h3 class="italic">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, suscipit.,,</h3>
+            <h3 class="italic">"Ontdek natuurlijke zorg waar welzijn, balans en innerlijke rust samenkomen – bij Al Medina staat jouw gezondheid centraal.,,</h3>
             <article>
                 <p>Bij Al Medina helpen we onze klanten om zich beter te voelen door middel van natuurlijke therapieën zoals hijama, cupping, en verschillende massagevormen. Onze behandelingen ondersteunen het lichaam bij het herstellen van balans en gezondheid, gericht op zowel lichamelijk als geestelijk welzijn. Elk consult wordt afgestemd op jouw specifieke behoeften om optimale resultaten te bereiken. Al Medina is opgericht met de missie om natuurlijke behandelingen toegankelijk te maken voor iedereen die zoekt naar gezondheid en innerlijke rust. Wij geloven dat welzijn een recht is en willen onze klanten op een holistische manier ondersteunen. </p>
                 <p>Met respect voor islamitische principes en moderne hygiënestandaarden, streven wij naar een hoogwaardige en veilige zorgervaring. Hygiëne is een kernwaarde bij Al Medina. We volgen strikte protocollen om ervoor te zorgen dat alle instrumenten en ruimtes steriel en schoon zijn. Dit waarborgt niet alleen jouw veiligheid, maar ook ons commitment aan de hoogste kwaliteitsnormen in ons vak. <br> <a href="/over_ons">Meer lezen</a></p>
@@ -53,13 +53,13 @@
                     <div class="onze-diensten-cards-card-img"><img src="{{asset('assets/cupping.png')}}" alt="Cupping"></div>
                     <div class="onze-diensten-cards-card-info">
                         <h5>cupping</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat sed at officiis.</p>
+                        <p>Ervaar de kracht van eeuwenoude therapie die spanning en gifstoffen loslaat.</p>
                         <ul>
-                            <li>voordeel 1</li>
-                            <li>voordeel 2</li>
-                            <li>voordeel 3</li>
+                            <li>Bevordert doorbloeding</li>
+                            <li>Vermindert spierspanning</li>
+                            <li>Ondersteunt ontgifting</li>
                         </ul>
-                        <a href="/">Meer ontdekken</a>
+                        <a href="/cupping">Meer ontdekken</a>
                     </div>
                 </div>
                 <div class="onze-diensten-cards-card">
@@ -68,13 +68,13 @@
                     </div>
                     <div class="onze-diensten-cards-card-info">
                         <h5>hijama</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet voluptas nam corporis asperiores!</p>
+                        <p>Herstel balans en energie met deze traditionele islamitische therapie.</p>
                         <ul>
-                            <li>voordeel 1</li>
-                            <li>voordeel 2</li>
-                            <li>voordeel 3</li>
+                            <li>Verlicht pijn</li>
+                            <li>Stimuleert detox</li>
+                            <li>Verbetert welzijn</li>
                         </ul>
-                        <a href="/">Meer ontdekken</a>
+                        <a href="/hijama">Meer ontdekken</a>
                     </div>
                 </div>
                 <div class="onze-diensten-cards-card">
@@ -83,21 +83,21 @@
                     </div>
                     <div class="onze-diensten-cards-card-info">
                         <h5>massages</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, consectetur ab.</p>
+                        <p>Ontspan volledig en laat stress en spanning verdwijnen met een gerichte massage.</p>
                         <ul>
-                            <li>voordeel 1</li>
-                            <li>voordeel 2</li>
-                            <li>voordeel 3</li>
+                            <li>Verlicht spierpijn</li>
+                            <li>Vermindert stress</li>
+                            <li>Bevordert flexibiliteit</li>
                         </ul>
-                        <a href="/">Meer ontdekken</a>
+                        <a href="/massages">Meer ontdekken</a>
                     </div>
                 </div>
             </div>
-            <button>Ontdek al onze diensten</button>
+            <button><a href="/tarieven">Ontdek al onze diensten</a></button>
             <div class="onze-diensten-line links"></div>
             <div class="onze-diensten-line rechts"></div>
         </section>
-        <section class="contact">
+        <section class="contact" id="contact">
             <h2 class="italic">Contact opnemen</h2>
             <form action="none">
                 <div class="contact-form-type">
@@ -152,8 +152,8 @@
                 <div class="reviews-cards">
                     <div class="reviews-cards-card">
                             <div class="reviews-cards-card-info">
-                                <h6 class="bold">Naam</h6>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.</p>
+                                <h6 class="bold">Vanity store</h6>
+                                <p>Zeer tevreden! Mariam is professioneel in haar werk en beschikt over veel ervaring en kennis. Ze beantwoordde mijn vragen grondig en gaf waardevolle tips na de behandeling. Zeker voor herhaling vatbaar!</p>
                                 <span class="review-cards-card-info-stars">
                                     <i class="bi bi-star-fill"></i>
                                     <i class="bi bi-star-fill"></i>
@@ -165,8 +165,8 @@
                         </div>
                         <div class="reviews-cards-card">
                             <div class="reviews-cards-card-info">
-                                <h6 class="bold">Naam</h6>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore dolor consequuntur officiis beatae, deserunt laborum quae itaque quidem nesciunt voluptatibus?</p>
+                                <h6 class="bold">Bridget Schilperoort</h6>
+                                <p>De eerste keer hijama, echt een fijne ervaring! Ik voelde mij meteen enorm verlicht in mijn nek en schouders. Ik zal deze behandeling zeker herhalen bij deze zuster inshallah!</p>
                                 <span class="review-cards-card-info-stars">
                                     <i class="bi bi-star-fill"></i>
                                     <i class="bi bi-star-fill"></i>
@@ -178,8 +178,8 @@
                         </div>
                         <div class="reviews-cards-card">
                             <div class="reviews-cards-card-info">
-                                <h6 class="bold">Naam</h6>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.</p>
+                                <h6 class="bold">Touraya Qurimi</h6>
+                                <p>Hele fijne Hijama behandeling gehad. Heel professioneel, hygiënisch en ze weet precies waar de pijn plekken zitten. Ik ben genezen na één behandeling van een flinke slijmvliesontsteking.</p>
                                 <span class="review-cards-card-info-stars">
                                     <i class="bi bi-star-fill"></i>
                                     <i class="bi bi-star-fill"></i>
@@ -192,7 +192,7 @@
                     </div>
                 </div>
                 <div class="reviews-button">
-                    <button class="italic">Meer reviews lezen</button>
+                    <a href="https://www.google.com/search?sca_esv=4dae32ac01e8b27f&hl=nl-NL&sxsrf=ADLYWILsVCEtJPy6eVreqyE-yfy4U9iyEw:1733165733685&q=Cupping+Al+medina&si=ACC90nwjPmqJHrCEt6ewASzksVFQDX8zco_7MgBaIawvaF4-7m5skUoVPrAfLaFGXeBPOjNO3YH5B_q8XCf1aseXlT8JhKiNC-Di74T_rTdJ0b1oauj_GS8%3D&uds=ADvngMg04TnMgw1FI9p1ZAV8hOXNcRzaxzIb5lyMS-3cOBUhVPqSgi2zvt_Iuc5So65baL_9lcMMyfHVi5-3wCT0y-Alb2ARapkwxnUwrhygBb8vZ3zB7yU&sa=X&ved=2ahUKEwiGkJK_4YmKAxW1hP0HHZOyIrwQ3PALegQIGxAE"><button class="italic">Meer reviews lezen</button></a>
                 </div>
             </div>
         </section>
@@ -206,7 +206,7 @@
                     <li><a href="/cupping">Cupping</a></li>
                     <li><a href="/massages">Massages</a></li>
                     <li><a href="/faq">Veelgestelde vragen</a></li>
-                    <li><a href="/diensten_en_tarieven">Diensten en tarieven</a></li>
+                    <li><a href="/tarieven">Diensten en tarieven</a></li>
                     <li><a href="/over_ons">Over ons</a></li>
                     <li><a href="/contact">Contact</a></li>
                 </ul>
@@ -217,7 +217,7 @@
                     <li><a href="mailto:">info@almedina.nl</a></li>
                     <li><a href="tel:">0612345678</a></li>
                     <li>Straat 1, Purmerend</li>
-                    <li>KVK: KVKNUMMER</li>
+                    <li>KVK: 82253412</li>
                 </ul>
             </div>
             <div class="footer-navigation-socials">

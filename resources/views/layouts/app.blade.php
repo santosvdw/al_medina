@@ -66,6 +66,7 @@
             <main>
                 <div class="container">
                     @yield('content')
+                    <p>Heeft u nog vragen? Bezoek dan onze pagina met <a href="/faq">veelgestelde vragen</a> of neem gemakkelijk contact met ons op via <a href="/contact">Whatsapp!</a></p>
                 </div>
             </main>
             <footer>
@@ -77,7 +78,7 @@
                             <li><a href="/cupping">Cupping</a></li>
                             <li><a href="/massages">Massages</a></li>
                             <li><a href="/faq">Veelgestelde vragen</a></li>
-                            <li><a href="/diensten_en_tarieven">Diensten en tarieven</a></li>
+                            <li><a href="/tarieven">Tarieven (en diensten)</a></li>
                             <li><a href="/over_ons">Over ons</a></li>
                             <li><a href="/contact">Contact</a></li>
                         </ul>
@@ -88,7 +89,7 @@
                             <li><a href="mailto:">info@almedina.nl</a></li>
                             <li><a href="tel:">0612345678</a></li>
                             <li>Straat 1, Purmerend</li>
-                            <li>KVK: KVKNUMMER</li>
+                            <li>KVK: 82253412</li>
                         </ul>
                     </div>
                     <div class="footer-navigation-socials">

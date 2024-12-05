@@ -28,6 +28,10 @@
     .reviews-body {
         width: 70vw;
         background-color: $tertiary;
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: center;
         padding: $space-m 0 calc($space-m * 2);
 
         .reviews-cards {
@@ -51,14 +55,20 @@
         }
     }
     .reviews-button {
-        background-color: green;
-        display: flex;
-        height: min-content;
-        justify-content: center;
+        position: relative;
+        margin: -2% auto 0;
+        // position: relative;
+        // display: flex;
+        // width: 100%;
+        // height: min-content;
 
-        button {
-            position: absolute;
-            margin-top: -2%;
-        }
+        // justify-content: center;
+        // background-color: green;
+
+        // button {
+        //     position: absolute;
+        //     align-self: center;
+        //     z-index: 30;
+        // }
     }
 }
