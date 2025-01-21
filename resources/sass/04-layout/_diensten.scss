@@ -5,12 +5,14 @@
     flex-flow: column wrap;
     align-items: center;
     position: relative;
+    max-width: 90vw;
     top: calc(-20vh + $space-l);
 
 
     &-cards {
         display: flex;
         flex-flow: row wrap;
+        gap: 3rem;
         justify-content: space-around;
         width: 100%;
 

@@ -120,24 +120,21 @@
     <h3>Tarieven</h3>
     <h4>Cupping en hijama</h4>
     <table border-collapse="collapse">
-        <thead colspan="4"><h6 class="bold">Hijama op maat</h6></thead>
+        <thead colspan="4"><h6 class="bold">Hijama op maat <em>(Wet cupping)</em></h6></thead>
         <tbody>
             <tr>
-                <td>Hijama op maat</td>
-                <td>(Wet cupping)</td>
-                <td>10 cups</td>
+                <td class="colspan-3">Hijama op maat -
+                10 cups</td>
                 <td class="emphasize">&euro;35</td>
             </tr>
             <tr>
-                <td>Hijama op maat</td>
-                <td>(Wet cupping)</td>
-                <td>15 cups</td>
+                <td class="colspan-3">Hijama op maat -
+                15 cups</td>
                 <td class="emphasize">&euro;40</td>
             </tr>
             <tr>
-                <td>Hijama op maat</td>
-                <td>(Wet cupping)</td>
-                <td>20 cups</td>
+                <td class="colspan-3">Hijama op maat -
+                20 cups</td>
                 <td class="emphasize">&euro;45</td>
             </tr>
         </table>

@@ -3,25 +3,24 @@
 @section('content')
 
 <div class="contact-pagina">
+
 <section class="contact-cta">
     <div class="contact-cta-links">
         <div class="contact-bellen">
-            <span class="icon"><i class="bi bi-telephone-fill"></i>
-            </span><span class="links">
+            <span class="links">
                 <p>Bellen of whatsapp:</p>
-                <a href="tel:+31648713668">+31648713668</a>
+                <a href="tel:+31648713668"><span class="icon"><i class="bi bi-telephone-fill"></i></span>+31648713668</a>
             </span>
         </div>
         <div class="contact-social-media">
             Sociale media:
-            <a href=""><span class="icon"><i class="bi bi-instagram"></i></span>Instagram</a>
-            <a href=""><span class="icon"><i class="bi bi-facebook"></i></span>Facebook</a>
+            <a href="https://www.instagram.com/cuppingalmedina/"><span class="icon"><i class="bi bi-instagram"></i></span>Instagram</a>
+            <a href="https://www.facebook.com/people/Cupping-Al-Medina/pfbid02za1YrvWuf9Ezy31Lshf2mVZiihRL2nCU3NbrEbbP4YPA1NrZPxku1W3ReBodTgohl/"><span class="icon"><i class="bi bi-facebook"></i></span>Facebook</a>
         </div>
         <div class="contact-email">
-            <span class="icon"><i class="bi bi-envelope-fill"></i>
-            </span><span class="links">
+            <span class="links">
                 <p>Email:</p>
-                <a href="mailto:info@cuppingalmedina.nl">info@cuppingalmedina.nl</a>
+                <a href="mailto:info@cuppingalmedina.nl"><span class="icon"><i class="bi bi-envelope-fill"></i></span>info@cuppingalmedina.nl</a>
             </span>
         </div>
     </div>
@@ -38,39 +37,38 @@
                 <label for="vraag">Vraag stellen</label>
             </span>
         </span>
-    <span class="naam">
-        <label for="naam"><h6>Naam:</h6></label>
-        <input type="text" name="naam" id="naam" placeholder="Voer hier uw naam in" required>
-    </span>
+        <span class="naam">
+            <label for="naam"><h6>Naam:</h6></label>
+            <input type="text" name="naam" id="naam" placeholder="Voer hier uw naam in" required>
+        </span>
+        <span class="behandeling">
+            <h6 id="introductie-tekst">Waar gaat uw vraag over?</h6>
+            <div>
+                <input type="checkbox" name="behandeling" id="behandeling_cupping" value="cupping">
+                <label for="behandeling_cupping">Cupping</label>
+            </div>
+            <div>
+                <input type="checkbox" name="behandeling" id="behandeling_hijama" value="hijama">
+                <label for="behandeling_hijama">Hijama</label>
+            </div>
+            <div>
+                <input type="checkbox" name="behandeling" id="behandeling_massage" value="massage">
+                <label for="behandeling_massage">Massage</label>
+            </div>
+            <div>
+                <input type="checkbox" name="behandeling" id="behandeling_overige" value="overige">
+                <label for="behandeling_overige">Overige</label>
+            </div>
+        </span>
 
-    <div class="behandeling">
-        <h6 id="introductie-tekst">Waar gaat uw vraag over?</h6>
-        <div>
-            <input type="checkbox" name="behandeling" id="behandeling_cupping" value="cupping">
-            <label for="behandeling_cupping">Cupping</label>
-        </div>
-        <div>
-            <input type="checkbox" name="behandeling" id="behandeling_hijama" value="hijama">
-            <label for="behandeling_hijama">Hijama</label>
-        </div>
-        <div>
-            <input type="checkbox" name="behandeling" id="behandeling_massage" value="massage">
-            <label for="behandeling_massage">Massage</label>
-        </div>
-        <div>
-            <input type="checkbox" name="behandeling" id="behandeling_overige" value="overige">
-            <label for="behandeling_overige">Overige</label>
-        </div>
-    </div>
+        <span class="opmerkingen">
+            <label for="opmerkingen"><h6 id="opmerkingen">Wat is uw vraag?</h6></label>
+            <textarea name="opmerkingen_value" id="opmerkingen_value" placeholder="Voer hier uw vraag in"></textarea>
+        </span>
 
-    <span class="opmerkingen">
-        <label for="opmerkingen"><h6 id="opmerkingen">Wat is uw vraag?</h6></label>
-        <textarea name="opmerkingen_value" id="opmerkingen_value" placeholder="Voer hier uw vraag in"></textarea>
-    </span>
-
-    <span class="button">
-        <button type="button" id="send-message" class="italic small-button black"><i class="bi bi-whatsapp"></i> Bericht versturen via whatsapp</button>
-    </span>
+        <span class="button">
+            <button type="button" id="send-message" class="italic small-button black"><i class="bi bi-whatsapp"></i> Bericht versturen via whatsapp</button>
+        </span>
 
     </form>
 </section>

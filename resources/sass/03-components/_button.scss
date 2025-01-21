@@ -6,7 +6,7 @@ button {
     font-size: $text-6;
     outline: none;
     border: none;
-    padding: 15px 35px;
+    padding: 0.8rem 1.2rem;
     cursor: pointer;
 
     &:hover {
@@ -41,5 +41,9 @@ button {
         &:hover {
             color: $white;
         }
+    }
+
+    &.active {
+        background-color: $primary;
     }
 }

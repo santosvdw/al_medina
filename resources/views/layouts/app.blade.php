@@ -36,7 +36,7 @@
                         <i class="bi bi-list"></i>
                     </span>
                 </div>
-                <div class="nav-menu-list" id="nav-menu-list-element">
+                <div class="nav-menu-list hidden" id="nav-menu-list-element">
                     <ul>
                         <li><a href="/cupping">Cupping</a></li>
                         <li><a href="/hijama">Hijama</a></li>

@@ -6,13 +6,13 @@ $tertiary: #EBC284;
 
 
 $text--2: clamp(0.6944rem, 0.6791rem + 0.0769vw, 0.7387rem);
-$text-p: clamp(1rem, 0.7807rem + 0.2631vw, 1.3125rem);
-$text-6: clamp(1rem, 0.8913rem + 0.5435vw, 1.3125rem);
+$text-p: clamp(0.6rem, 0.7807rem + 0.2631vw, 1.3125rem);
+$text-6: clamp(0.6rem, 0.8913rem + 0.5435vw, 1.3125rem);
 $text-5: clamp(1.2rem, 1.0088rem + 0.9558vw, 1.496rem);
 $text-4: clamp(1.44rem, 1.1297rem + 1.5516vw, 1.6rem);
 $text-3: clamp(1.728rem, 1.2477rem + 2.4014vw, 2.1088rem);
 $text-2: clamp(2.0736rem, 1.3535rem + 3.6007vw, 3.144rem);
-$text-1: clamp(2.4883rem, 1.4324rem + 5.2794vw, 3.524rem);
+$text-1: clamp(1.2883rem, 0.4324rem + 5.2794vw, 3.524rem);
 
 $space-3xs: clamp(0.25rem, 0.2283rem + 0.1087vw, 0.3125rem);
 $space-2xs: clamp(0.5rem, 0.4565rem + 0.2174vw, 0.625rem);

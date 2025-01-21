@@ -1,7 +1,10 @@
-@use '../01-usables/usables' as *;
+@use "../01-usables/usables" as *;
 
 .quote {
+    align-self: center;
+    width: 70vw;
     position: relative;
+    // left: -10vw;
     top: -20vh;
     display: flex;
     flex-flow: column wrap;
@@ -13,12 +16,20 @@
 
     article {
         padding: $space-xs 0 $space-l;
-        width: 100%;
+        width: 70vw;
         display: flex;
         flex-flow: row wrap;
-        justify-content: space-between;
+        gap: 2%;
+        justify-content: center;
         p {
-            width: 49%;
+            width: clamp(250px, 49%, 40ch);
+        }
+    }
+
+    .quote-starline {
+        width: min(390px, 50vw);
+        img {
+            width: 100%;
         }
     }
 }

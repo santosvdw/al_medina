@@ -1,20 +1,96 @@
 @use "../01-usables/usables" as *;
 
+@media screen and (min-width: 800px) {
+    nav#home .nav-links {
+        &.mobile {
+            display: none;
+        }
+
+        &.desktop {
+            display: flex;
+        }
+    }
+}
+
+@media screen and (max-width: 799px) {
+    nav#home .nav-links {
+        &.mobile {
+            display: flex;
+        }
+
+        &.desktop {
+            display: none;
+        }
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .home {
+        header.home {
+            height: 70vh;
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            left: 0;
+            top: 10vh;
+        }
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .home {
+        header.home {
+            height: 70vh;
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            left: 0;
+            top: 10vh;
+
+            .header-logo {
+                width: 100vw;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    width: 40vw;
+                    min-width: 260px;
+                }
+            }
+        }
+    }
+}
+
 .home {
     &.hero {
         height: 100vh;
-        overflow: hidden;
+        // overflow: hidden;
 
         nav {
+            height: 10vh;
+            // background-color: green;
             padding: 2rem 0;
             display: flex;
             flex-flow: row nowrap;
-            justify-content: space-between;
-            ul {
-                width: 40%;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            position: absolute;
+            left: 0;
+
+            // * {
+            //     outline: 1px solid red;
+            // }
+            .desktop ul {
                 display: flex;
                 justify-content: space-between;
                 padding: 1rem 0;
+                gap: 1rem;
                 list-style-type: none;
                 li {
                     a {
@@ -28,6 +104,72 @@
                         transition: all 0.3s ease;
                         &:hover {
                             color: $secondary;
+                        }
+                    }
+                }
+            }
+
+            .mobile {
+                display: flex;
+                width: 100vw;
+                height: fit-content;
+                position: absolute;
+                z-index: 100;
+                top: 0;
+                left: 0;
+
+                .nav-menu-button {
+                    position: relative;
+                    z-index: 100;
+
+                    .menu-button {
+                        position: fixed;
+                        top: 1rem;
+                        background-color: $primary;
+                        left: 1rem;
+                        display: block;
+                        height: 2rem;
+                        width: 2rem;
+                        i {
+                            font-size: 2rem;
+                            margin: 0;
+                            display: block;
+                            padding: 0;
+                            line-height: 1;
+                        }
+                    }
+                }
+
+                .nav-menu-list {
+                    position: fixed;
+                    left: 0;
+                    top: 0;
+                    background-color: $primary;
+                    width: 100vw;
+                    padding: 1rem 0;
+                    display: none; // set to flex
+                    flex-flow: column nowrap;
+                    gap: 0.5rem;
+                    ul {
+                        display: flex;
+                        flex-flow: row wrap;
+                        background-color: green;
+                        margin: 0 auto;
+                        gap: 0.5rem;
+                        justify-content: center;
+                        width: 80vw;
+                        list-style-type: none;
+
+                        &.icons {
+                            i {
+                                font-size: 1.2rem;
+                                color: $white;
+                            }
+                        }
+
+                        li a {
+                            text-decoration: none;
+                            color: $white;
                         }
                     }
                 }
@@ -49,37 +191,62 @@
             z-index: -1;
         }
 
-        .lower-gradient {
-            /* Rectangle 8 */
+        .header-logo {
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+            align-items: center;
 
-            position: absolute;
-            width: 100vw;
-            height: 40vh;
-            left: 0px;
-            top: 60vh;
+            *,
+            *::before,
+            *::after {
+                border: 1px solid red;
+            }
 
-            background: linear-gradient(
-                180deg,
-                rgba(243, 247, 247, 0) 0%,
-                rgba(249, 251, 251, 0.75) 47.29%,
-                rgba(245, 248, 248, 0.96) 81%,
-                $white 100%
-            );
+            h1 {
+                font-size: calc(2 * $text-1);
+                font-weight: 700;
+                color: $black;
+                text-transform: uppercase;
+                margin: 0;
+                line-height: 1;
+            }
         }
 
-        header.home {
-            height: 70vh;
-            display: flex;
-            align-items: center;
-            background-color: none;
-            justify-content: center;
-            .header-img img {
+        .header-bg {
+            .lower-gradient {
+                position: absolute;
+                width: 100vw;
+                height: 40vh;
+                left: 0px;
+                top: 60vh;
+
+                background: linear-gradient(
+                    180deg,
+                    rgba(243, 247, 247, 0) 0%,
+                    rgba(249, 251, 251, 0.75) 47.29%,
+                    rgba(245, 248, 248, 0.96) 81%,
+                    $white 100%
+                );
+            }
+
+            .header-img {
                 width: 100vw;
                 position: absolute;
                 top: 0;
                 left: 0;
                 z-index: -10;
                 max-height: 100vh;
+                overflow: hidden;
+                display: flex;
+                justify-content: center;
+                img {
+                    width: 100%;
+                    min-width: 1400px;
+                    height: 100%;
+                    align-self: center;
+                    // border: 1px solid black;
+                }
             }
             .header-overlay {
                 background-color: #efab6250;
@@ -91,11 +258,13 @@
                 height: 100vh;
                 z-index: -5;
             }
-            .header-logo {
-                width: 100vw;
-                position: relative;
-                top: -5vh;
-            }
         }
     }
+}
+
+main.home-main {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
 }

@@ -1,7 +1,7 @@
 @use "../01-usables/usables" as *;
 
 @media screen and (min-width: 800px) {
-    .regular nav .nav-links {
+     nav .nav-links {
         &.mobile {
             display: none;
         }
@@ -13,7 +13,7 @@
 }
 
 @media screen and (max-width: 799px) {
-    .regular nav .nav-links {
+    nav .nav-links {
         &.mobile {
             display: flex;
         }
@@ -149,8 +149,9 @@
                         animation: slideOutToAbove 0.5s forwards;
                     }
 
-                    
-
+                    &.hidden {
+                        display: none;
+                    }
 
                     a,
                     li,

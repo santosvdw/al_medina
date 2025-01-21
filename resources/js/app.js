@@ -1,51 +1,13 @@
-// import './bootstrap';
-
-// import Alpine from 'alpinejs';
-
-// window.Alpine = Alpine;
-
-// Alpine.start();
-
-let vraag = 0;
-
-document.querySelectorAll(".contact-form-type button").forEach((button) => {
-    button.addEventListener("click", function (event) {
-        event.preventDefault();
-    });
-});
-
-document.querySelectorAll(".changeTypeAfspraak").forEach((button) => {
-    button.addEventListener("click", changeTypeAfspraak);
-});
-
-function changeTypeAfspraak() {
-    vraag = 0;
-    document.querySelector("#introductie-tekst").innerHTML =
-        "In welke behandeling(en) heeft u interesse?";
-    document.querySelector("#opmerkingen").innerHTML =
-        "Heeft u nog opmerkingen of vragen?";
-    console.log("Afspraak maken");
-}
-
-function changeTypeVraag() {
-    vraag = 1;
-    document.querySelector("#introductie-tekst").innerHTML =
-        "Waar gaat uw vraag over?";
-    document.querySelector("#opmerkingen").innerHTML = "Wat is uw vraag?";
-    console.log("Vraag stellen");
-}
-
-changeTypeAfspraak();
-
 // write a function that toggles the visibility of a div
 // add an event listener to the button that calls the function
 document
     .getElementById("toggle-visibility")
     .addEventListener("click", toggleVisibility);
-
 function toggleVisibility() {
-    console.log("toggleVisibility");
-    let element = document.getElementById("nav-menu-list-element");
+    let element = document.querySelector("#nav-menu-list-element");
+    if (element.classList.contains("hidden")) {
+        element.classList.remove("hidden");
+    }
     if (element.classList.contains("open")) {
         element.classList.remove("open");
         element.classList.add("close");
@@ -54,6 +16,68 @@ function toggleVisibility() {
         element.classList.add("open");
     }
 }
+
+let vraag = 0;
+
+function set_vraag() {
+    vraag = 1;
+}
+
+let afspraakButton = document.querySelector("#changeTypeAfspraak");
+let vraagButton = document.querySelector("#changeTypeVraag");
+
+
+
+document.querySelectorAll(".contact-form-type button").forEach((button) => {
+    button.addEventListener("click", function (event) {
+        event.preventDefault();
+    });
+});
+
+// document.querySelectorAll("#send-message").forEach((button) => {
+//     button.addEventListener("click", function (event) {
+//         event.preventDefault();
+//     });
+// });
+
+document.querySelectorAll("#changeTypeAfspraak").forEach((button) => {
+    button.addEventListener("click", changeTypeAfspraak);
+});
+
+document.querySelectorAll("#changeTypeVraag").forEach((button) => {
+    button.addEventListener("click", changeTypeVraag);
+});
+
+function changeTypeAfspraak() {
+    vraag = 0;
+    document.querySelector("#introductie-tekst").innerHTML =
+    "In welke behandeling(en) heeft u interesse?";
+    document.querySelector("#opmerkingen").innerHTML =
+    "Heeft u nog opmerkingen of vragen?";
+    if (afspraakButton.classList.contains("active")) {
+        afspraakButton.classList.remove("active");
+        vraagButton.classList.add("active");
+    } else {
+        vraagButton.classList.remove("active");
+        afspraakButton.classList.add("active");
+    }
+}
+
+function changeTypeVraag() {
+    vraag = 1;
+    document.querySelector("#introductie-tekst").innerHTML =
+        "Waar gaat uw vraag over?";
+    document.querySelector("#opmerkingen").innerHTML = "Wat is uw vraag over onze behandelingen?";
+
+    if (afspraakButton.classList.contains("active")) {
+        afspraakButton.classList.remove("active");
+        vraagButton.classList.add("active");
+    } else {
+        vraagButton.classList.remove("active");
+        afspraakButton.classList.add("active");
+    }
+}
+
 
 // Write a function that changes based on the value of a radio input field
 // add an event listener to the radio input field that calls the function
@@ -86,9 +110,16 @@ function addToList(event) {
     // });
 }
 
+document.getElementById("opmerkingen").addEventListener("change", function (event) {
+    console.log("Opmerkingen:", event.target.value);
+});
+
 document.querySelector("#send-message").addEventListener("click", sendMessage);
 
+// document.querySelector("#send-message").
+
 function sendMessage() {
+    console.log("Send message");
     let naam = document.getElementById("naam").value;
     let opmerkingen = document.getElementById("opmerkingen_value").value;
     console.log("Naam:", naam);
@@ -129,8 +160,11 @@ function sendMessage() {
     let message;
 
     if (vraag === 0) {
-        message = `Hallo! Mijn naam is ${naam} ${behandelingenstring}. Ik heb nog wel een vraag/opmerking: ${opmerkingen}`;
-
+        if (opmerkingen == "") {
+            message = `Hallo! Mijn naam is ${naam} ${behandelingenstring}.`;
+        } else {
+            message = `Hallo! Mijn naam is ${naam} ${behandelingenstring}. Ik heb nog wel een vraag/opmerking: ${opmerkingen}`;
+        }
     } else {
         message = `Hallo! Mijn naam is ${naam} ${behandelingenstring}. ${opmerkingen}`;
     }
@@ -139,5 +173,5 @@ function sendMessage() {
     message = message.replace(/ /g, "%20");
 
     // Go to url
-    window.location.href = `https://api.whatsapp.com/send?phone=31648713668&text=${message}`
+    window.location.href = `https://api.whatsapp.com/send?phone=31648713668&text=${message}`;
 }

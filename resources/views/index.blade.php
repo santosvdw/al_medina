@@ -10,32 +10,62 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
+    {{-- <link rel="stylesheet" href="{{asset('assets/test.css')}}"> --}}
 </head>
 <body>
 
-<div class="container">
+{{-- <div class="container"> --}}
     <div class="hero home">
         <div class="upper-gradient"></div>
         <nav id="home">
-            <ul>
-                <li><a href="/cupping">cupping</a></li>
-                <li><a href="/hijama">hijama</a></li>
-                <li><a href="/massages">massages</a></li>
-            </ul>
-            <ul>
-                <li><a href="/tarieven">tarieven</a></li>
-                <li><a href="/over_ons">over ons</a></li>
-                <li><a href="/contact">contact</a></li>
-            </ul>
+            <div class="nav-links desktop">
+                <ul>
+                    <li><a href="/cupping">Cupping</a></li>
+                    <li><a href="/hijama">Hijama</a></li>
+                    <li><a href="/massages">Massages</a></li>
+                    <li><a href="/tarieven">Tarieven</a></li>
+                    <li><a href="/over_ons">Over ons</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="nav-links mobile">
+                <div class="nav-menu-button">
+                    <span class="menu-button" id="toggle-visibility" >
+                        <i class="bi bi-list"></i>
+                    </span>
+                </div>
+                <div class="nav-menu-list hidden" id="nav-menu-list-element">
+                    <ul>
+                        <li><a href="/cupping">Cupping</a></li>
+                        <li><a href="/hijama">Hijama</a></li>
+                        <li><a href="/massages">Massages</a></li>
+                        <li><a href="/tarieven">Tarieven</a></li>
+                        <li><a href="/over_ons">Over ons</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                    </ul>
+                    <ul class="icons">
+                        <li>
+                            <a href="/https://www.instagram.com/cuppingalmedina/"><i class="bi bi-instagram"></i></a>
+                            <a href="https://www.facebook.com/people/Cupping-Al-Medina/pfbid02za1YrvWuf9Ezy31Lshf2mVZiihRL2nCU3NbrEbbP4YPA1NrZPxku1W3ReBodTgohl/"><i class="bi bi-facebook"></i></a>
+                        </li>
+                    </ul>
+                </div>
         </nav>
         <header class="home">
-            <div class="header-logo"><img src="{{asset('assets/logoalmedina.png')}}" alt="Al Medina"></div>
+            <div class="header-logo">
+                {{-- <img src="{{asset('assets/logoalmedina.png')}}" alt="Al Medina"> --}}
+                <h1>Al Medina</h1>
+                <img src="{{asset('assets/starline.png')}}" alt="" srcset="">
+                <h6>Hijama, cupping & massages</h6>
+            </div>
+        </header>
+        <div class="header-bg">
             <div class="header-overlay"></div>
             <div class="header-img"><img src="{{asset('assets/background-header.png')}}" alt="Foto van een woestijn"></div>
-        </header>
-        <div class="lower-gradient"></div>
+            <div class="lower-gradient"></div>
+        </div>
     </div>
-    <main>
+    <main class="home-main">
         <section class="quote">
             <h3 class="italic">"Ontdek natuurlijke zorg waar welzijn, balans en innerlijke rust samenkomen – bij Al Medina staat jouw gezondheid centraal.,,</h3>
             <article>
@@ -50,7 +80,7 @@
             <h2 class="italic">Onze diensten</h2>
             <div class="onze-diensten-cards">
                 <div class="onze-diensten-cards-card">
-                    <div class="onze-diensten-cards-card-img"><img src="{{asset('assets/cupping.png')}}" alt="Cupping"></div>
+                    <div class="onze-diensten-cards-card-img"><img src="{{asset('assets/cupping.png')}}" loading="lazy" alt="Cupping"></div>
                     <div class="onze-diensten-cards-card-info">
                         <h5>cupping</h5>
                         <p>Ervaar de kracht van eeuwenoude therapie die spanning en gifstoffen loslaat.</p>
@@ -64,7 +94,7 @@
                 </div>
                 <div class="onze-diensten-cards-card">
                     <div class="onze-diensten-cards-card-img">
-                        <img src="{{asset('assets/hijama.png')}}" alt="Hijama">
+                        <img src="{{asset('assets/hijama.png')}}" loading="lazy" alt="Hijama">
                     </div>
                     <div class="onze-diensten-cards-card-info">
                         <h5>hijama</h5>
@@ -79,7 +109,7 @@
                 </div>
                 <div class="onze-diensten-cards-card">
                     <div class="onze-diensten-cards-card-img">
-                        <img src="{{asset('assets/massages.png')}}" alt="Massages">
+                        <img src="{{asset('assets/massages.png')}}" loading="lazy" alt="Massages">
                     </div>
                     <div class="onze-diensten-cards-card-info">
                         <h5>massages</h5>
@@ -93,15 +123,15 @@
                     </div>
                 </div>
             </div>
-            <button><a href="/tarieven">Ontdek al onze diensten</a></button>
+            <a href="/tarieven"><button>Ontdek al onze diensten</button></a>
             <div class="onze-diensten-line links"></div>
             <div class="onze-diensten-line rechts"></div>
         </section>
         <section class="contact" id="contact">
             <h2 class="italic">Contact opnemen</h2>
-            <form action="none">
+            <form>
                 <div class="contact-form-type">
-                    <button id="changeTypeAfspraak" class="italic">Afspraak maken</button>
+                    <button id="changeTypeAfspraak" class="italic active">Afspraak maken</button>
                     <button id="changeTypeVraag" class="italic">Vraag stellen</button>
                 </div>
 
@@ -111,29 +141,32 @@
                 </div>
 
                 <div class="contact-form-behandeling">
-                    <label for="behandeling"><h6 class="italic">Welke behandeling heeft u interesse in?*</h6></label>
+                    <label for="behandeling"><h6 class="italic" id="introductie-tekst">Welke behandeling heeft u interesse in?*</h6></label>
                     <div class="contact-form-behandeling-boxes">
                         <span>
-                            <input type="checkbox" name="behandeling" id="cupping" value="cupping">
+                            <input type="checkbox" class="behandeling" name="behandeling" id="cupping" value="cupping">
                             <label for="cupping">Cupping</label>
                         </span>
                         <span>
-                            <input type="checkbox" name="behandeling" id="hijama" value="hijama">
+                            <input type="checkbox" class="behandeling" name="behandeling" id="hijama" value="hijama">
                             <label for="hijama">Hijama</label>
                         </span>
                         <span>
-                            <input type="checkbox" name="behandeling" id="massages" value="massages">
+                            <input type="checkbox" class="behandeling" name="behandeling" id="massages" value="massages">
                             <label for="massages">Massages</label>
                         </span>
                     </div>
                 </div>
 
                 <div class="contact-form-opmerkingen">
-                    <label for="opmerkingen"><h6 class="italic">Heeft u nog aanvullende opmerkingen of vragen?</h6></label>
-                    <textarea name="opmerkingen" id="opmerkingen" placeholder="Voer hier eventueel aanvullende vragen of opmerkingen toe"></textarea>
+                    <label for="opmerkingen"><h6 class="italic" id="opmerkingen">Heeft u nog aanvullende opmerkingen of vragen?</h6></label>
+                    <textarea name="opmerkingen" id="opmerkingen_value" placeholder="Voer hier eventueel aanvullende vragen of opmerkingen toe"></textarea>
                 </div>
-
-                <button onclick="" class="italic"><i class="bi bi-whatsapp"></i> Bericht versturen via whatsapp</button>
+{{--
+                <span class="button">
+                    <button type="button" id="send-message" onclick="sendMessage()" class="italic small-button black"><i class="bi bi-whatsapp"></i> Bericht versturen via whatsapp</button>                 </span> --}}
+                <button type="button" id="send-message" onclick="sendMessage()" class="italic whatsapp-btn"><i class="bi bi-whatsapp"></i> Bericht versturen via whatsapp</button>
+                {{-- <button id="send-message" onclick="sendMessage()" class="italic whatsapp-btn"><i class="bi bi-whatsapp"></i><span>Bericht versturen via whatsapp</span></button> --}}
             </form>
             <div class="contact-decor">
                 <img src="{{asset('assets/side-decor.png')}}" alt="">
@@ -229,10 +262,10 @@
             </div>
         </div>
         <div class="footer-disclaimer">
-            <p class="left">Deze website is gemaakt door <a href="https://santosvdw.nl">Santos van der Wansem</a>.</p>
+            <p class="left">Deze website is gemaakt door <a class="no-break" href="https://santosvdw.nl">Santos van der Wansem</a>.</p>
             <p class="right">Al Medina &copy; 2024. Alle rechten voorbehouden.</p>
         </div>
     </footer>
-</div>
+{{-- </div> --}}
 </body>
 </html>

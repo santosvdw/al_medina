@@ -7,7 +7,7 @@
     flex-flow: column wrap;
     align-items: center;
     position: relative;
-    left: -10vw;
+    // left: -10vw;
     place-content: center;
     padding: $space-xl 0;
     color: $black;
@@ -24,6 +24,13 @@
         width: 70%;
         gap: $space-xs;
 
+        .contact-form-type {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-evenly;
+            gap: $space-xs;
+        }
+
         label {
             font-size: $text-6;
         }
@@ -39,6 +46,11 @@
             align-items: center;
             justify-content: center;
             flex-flow: column wrap;
+            width: 80%;
+
+            h6 {
+                text-align: center;
+            }
 
             // *, *::before, *::after {
             //     outline: 1px black solid;
@@ -47,14 +59,19 @@
             &-boxes {
                 display: inherit;
                 flex-flow: row wrap;
-                justify-content: space-between;
-                width: 100%;
+                justify-content: space-evenly;
+                width: clamp(100px, 80%, 45ch);
             }
         }
 
         textarea {
-            width: calc($space-xl * 8);
+            width: 100%;
+            // width: clamp(100px, calc($space-xl * 8), 1200px);
             height: calc($space-xl * 3);
+        }
+
+        input[type="text"] {
+            width: clamp(100px, 80%, 45ch);
         }
 
         textarea,
@@ -74,6 +91,23 @@
                 background-color: $secondary;
             }
         }
+
+        button.whatsapp-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.2rem;
+
+            span {
+                color: $white;
+                font-size: $text-6;
+            }
+
+            i {
+                height: 100%;
+                font-size: 1.2rem;
+            }
+        }
     }
 
     .contact-decor {
@@ -83,13 +117,13 @@
         }
     }
     .contact-background {
-        background-color: #FFE9c1;
+        background-color: #ffe9c1;
         width: 100vw;
         z-index: -1;
         position: absolute;
         top: 50%;
         // margin-top: calc(50% + $space-xl);
         height: 100vh;
-        box-shadow: 0 100vh 0 #FFE9c1;
+        box-shadow: 0 100vh 0 #ffe9c1;
     }
 }
