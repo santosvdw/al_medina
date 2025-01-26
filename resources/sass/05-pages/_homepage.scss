@@ -125,7 +125,7 @@
                     .menu-button {
                         position: fixed;
                         top: 1rem;
-                        background-color: $primary;
+                        background-color: $secondary;
                         left: 1rem;
                         display: block;
                         height: 2rem;
@@ -144,7 +144,7 @@
                     position: fixed;
                     left: 0;
                     top: 0;
-                    background-color: $primary;
+                    background-color: $secondary;
                     width: 100vw;
                     padding: 1rem 0;
                     display: none; // set to flex
@@ -152,12 +152,14 @@
                     gap: 0.5rem;
                     ul {
                         display: flex;
-                        flex-flow: row wrap;
-                        margin: 0 auto;
+                        flex-flow: column wrap;
+
+                        margin: 5rem auto 0;
                         gap: 0.5rem;
                         justify-content: center;
                         width: 80vw;
                         list-style-type: none;
+                        color: $black;
 
                         &.icons {
                             i {

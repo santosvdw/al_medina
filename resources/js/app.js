@@ -3,7 +3,9 @@
 document
     .getElementById("toggle-visibility")
     .addEventListener("click", toggleVisibility);
+
 function toggleVisibility() {
+    console.log("Toggle visibility");
     let element = document.querySelector("#nav-menu-list-element");
     if (element.classList.contains("hidden")) {
         element.classList.remove("hidden");

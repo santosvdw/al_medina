@@ -22,6 +22,52 @@
             display: none;
         }
     }
+
+    .home {
+        nav {
+            .nav-links {
+                &.mobile {
+                    .nav-menu-list {
+                        height: 100vh;
+                        width: 100vw;
+                        flex-flow: column wrap;
+
+                        background-color: $secondary;
+
+                        @keyframes slideInFromAbove {
+                            0% {
+                                transform: translateY(-100%);
+                            }
+                            100% {
+                                transform: translateY(0);
+                            }
+                        }
+                    
+                        @keyframes slideOutToAbove {
+                            0% {
+                                transform: translateY(0);
+                            }
+                            100% {
+                                transform: translateY(-100%);
+                            }
+                        }
+
+                        &.hidden {
+                            display: none;
+                        }
+
+                        &.open {
+                            display: flex;
+                        }
+
+                        &.close {
+                            display: flex;
+                    }
+                }
+            }
+        }
+    }
+    }
 }
 
 .regular {
@@ -117,63 +163,64 @@
                         }
                     }
                 }
-                .nav-menu-list {
-                    width: 100vw;
-                    height: calc(100vh - ($text-6 * 6));
-                    position: absolute;
-                    display: flex;
-                    flex-flow: column wrap;
-                    align-items: center;
-                    z-index: 1;
-                    top: calc($text-6 * 6);
-                    background-color: $secondary;
-
-                    @keyframes slideInFromAbove {
-                        0% {
-                            transform: translateY(-100%);
-                        }
-                        100% {
-                            transform: translateY(0);
-                        }
-                    }
-
-                    @keyframes slideOutToAbove {
-                        0% {
-                            transform: translateY(0);
-                        }
-                        100% {
-                            transform: translateY(-100%);
-                        }
-                    }
-
-                    &.open {
-                        animation: slideInFromAbove 0.5s forwards;
-                    }
-
-                    &.close {
-                        animation: slideOutToAbove 0.5s forwards;
-                    }
-
-                    &.hidden {
-                        display: none;
-                    }
-
-                    a,
-                    li,
-                    i {
-                        text-align: center;
-                        font-size: $text-5;
-                        list-style: none;
-                        color: $black;
-                        text-decoration: none;
-                    }
-
-                    ul:last-child {
-                        gap: 5px;
-                        margin-top: 10px;
-                    }
-                }
             }
         }
+    }
+}
+
+.nav-menu-list {
+    width: 100vw;
+    height: calc(100vh - ($text-6 * 6));
+    position: absolute;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    z-index: 1;
+    top: calc($text-6 * 6);
+    background-color: $secondary;
+
+    @keyframes slideInFromAbove {
+        0% {
+            transform: translateY(-100%);
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes slideOutToAbove {
+        0% {
+            transform: translateY(0);
+        }
+        100% {
+            transform: translateY(-100%);
+        }
+    }
+
+    &.open {
+        animation: slideInFromAbove 0.5s forwards;
+    }
+
+    &.close {
+        animation: slideOutToAbove 0.5s forwards;
+    }
+
+    &.hidden {
+        display: none;
+    }
+
+    a,
+    li,
+    i {
+        text-align: center;
+        font-size: $text-5;
+        list-style: none;
+        color: $black;
+        text-decoration: none;
+    }
+
+    ul:last-child {
+        gap: 5px;
+        margin-top: 10px;
     }
 }
