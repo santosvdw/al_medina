@@ -10,35 +10,35 @@ Route::get('/', function () {
 Route::get('/cupping', function () {
     return view('cupping', [
         "titel" => "Cupping",
-        "foto" => "background-regular.png",
+        "foto" => "image.png",
     ]);
 });
 
 Route::get('/contact', function () {
     return view('contact', [
         "titel" => "Contact",
-        "foto" => "background-regular.png",
+        "foto" => "contact-bg.jpg",
     ]);
 });
 
 Route::get('/hijama', function () {
     return view('hijama', [
         "titel" => "Hijama",
-        "foto" => "background-regular.png",
+        "foto" => "hijama-bg.jpg",
     ]);
 });
 
 Route::get('/over_ons', function () {
     return view('over_ons', [
         "titel" => "Over ons",
-        "foto" => "background-regular.png",
+        "foto" => "over_ons-bg.png",
     ]);
 });
 
 Route::get('/massages', function () {
     return view('massages', [
         "titel" => "Massages",
-        "foto" => "background-regular.png",
+        "foto" => "massage-bg.jpg",
     ]);
 });
 
@@ -52,14 +52,14 @@ Route::get('/template', function () {
 Route::get('/tarieven', function () {
     return view('tarieven_en_diensten', [
         "titel" => "Tarieven en diensten",
-        "foto" => "background-regular.png",
+        "foto" => "tarieven-bg.jpg",
     ]);
 });
 
 Route::get('/faq', function () {
     return view('faq', [
         "titel" => "Veelgestelde vragen",
-        "foto" => "background-regular.png",
+        "foto" => "image.png",
     ]);
 });
 

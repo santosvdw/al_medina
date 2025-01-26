@@ -63,4 +63,13 @@
     </article>
 </section>
 
+<section class="paragraph">
+    <article>
+        <p>De profeet Mohammed (vzmh) zei:</p>
+        <h6 class="italic">"Ik kwam niet langs een groep engelen tijdens de nacht van Israa of zij zeiden allen "beveel je oemmah om hijama te verrichten.",,</h6>
+        <p>(Silsilah Asahleha van Sheikh al Albani, 2263)</p>
+    </article>
+    </span>
+</section>
+
 @endsection

@@ -34,6 +34,11 @@
         a {
             z-index: 100;
         }
+
+        h5 {
+            font-family: "Libre Baskerville", Georgia, "Times New Roman", Times, serif,
+                serif;
+        }
         .nav-logo {
             background-color: $white;
             height: calc($text-6 * 3);

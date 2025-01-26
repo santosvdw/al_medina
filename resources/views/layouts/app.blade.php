@@ -11,6 +11,8 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="{{asset('assets/favicon.png')}}" type="image/png">
         @vite(['resources/sass/app.scss', 'resources/js/app.js'])
     </head>
     <body class="regular">
@@ -86,17 +88,17 @@
                     <div class="footer-navigation-contact">
                         <h6 class="italic">Contactinformatie</h6>
                         <ul>
-                            <li><a href="mailto:">info@almedina.nl</a></li>
-                            <li><a href="tel:">0612345678</a></li>
-                            <li>Straat 1, Purmerend</li>
+                            <li><a href="mailto:info@cuppingalmedina.nl">Email: info@cuppingalmedina.nl</a></li>
+                            <li><a href="tel:+31648713668">Tel: +31648713668</a></li>
+                            <li>Steve Bikostraat 10, Purmerend</li>
                             <li>KVK: 82253412</li>
                         </ul>
                     </div>
                     <div class="footer-navigation-socials">
                         <h6 class="italic">Sociale media</h6>
                         <ul>
-                            <li><a href="https://instagram.com"><i class="bi bi-instagram"></i> Instagram</a></li>
-                            <li><a href="https://facebook.com"><i class="bi bi-facebook"></i> Facebook</a></li>
+                            <li><a href="https://www.instagram.com/cuppingalmedina/"><i class="bi bi-instagram"></i> Instagram</a></li>
+                            <li><a href="https://www.facebook.com/people/Cupping-Al-Medina/pfbid02za1YrvWuf9Ezy31Lshf2mVZiihRL2nCU3NbrEbbP4YPA1NrZPxku1W3ReBodTgohl/"><i class="bi bi-facebook"></i> Facebook</a></li>
                         </ul>
                     </div>
                 </div>

@@ -32,44 +32,4 @@
         <p>Cupping wordt niet aanbevolen bij bepaalde gezondheidsproblemen, zoals ernstige bloedarmoede, huidinfecties, of als je onlangs een chirurgische ingreep hebt ondergaan. Bespreek jouw gezondheidssituatie altijd met ons.</p>
     </article>
 </section>
-
-<section class="form">
-    <h3>Formulier</h3>
-    <form action="/">
-    <span class="naam">
-        <label for="naam"><h6>Naam:</h6></label>
-        <input type="text" name="naam" id="naam" placeholder="Voer hier uw naam in" required>
-    </span>
-
-    <span class="behandeling">
-        <h6>Waar gaat uw vraag over?</h6>
-        <span id="behandeling-cupping">
-            <input type="checkbox" name="behandeling" id="cupping" value="cupping">
-            <label for="cupping">Cupping</label>
-        </span>
-        <span id="behandeling-hijama">
-            <input type="checkbox" name="behandeling" id="hijama" value="hijama">
-            <label for="hijama">Hijama</label>
-        </span>
-        <span id="behandeling-massage">
-            <input type="checkbox" name="behandeling" id="massage" value="massage">
-            <label for="massage">Massage</label>
-        </span>
-        <span id="behandeling-overige">
-            <input type="checkbox" name="behandeling" id="overige" value="overige">
-            <label for="overige">Overige</label>
-        </span>
-    </span>
-
-    <span class="vraag">
-        <label for="vraag"><h6>Wat is uw vraag?</h6></label>
-        <textarea name="vraag" id="vraag" placeholder="Voer hier uw vraag in" required></textarea>
-    </span>
-
-    <span class="button">
-        <button onclick="" class="italic small-button black"><i class="bi bi-whatsapp"></i> Bericht versturen via whatsapp</button>
-    </span>
-
-    </form>
-</section>
 @endsection

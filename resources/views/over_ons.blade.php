@@ -15,7 +15,7 @@
         <p>Mijn missie is om vrouwen te helpen weer in hun kracht te komen. Door hen in contact te brengen met hun lichaam, geef ik hen de ruimte om opnieuw verbinding te maken met hun innerlijke kracht en balans. Het is mijn wens dat elke vrouw die bij mij komt, niet alleen fysiek opgelucht voelt, maar ook een diepere rust en zelfliefde ervaart.</p><br>
     </div>
     <div class="paragraph-image">
-        <img src="{{asset('assets/mariam.png')}}" loading="lazy" alt="Een foto van de eigenaresse">
+        <img src="{{asset('assets/mariam.jpeg')}}" loading="lazy" alt="Een foto van de eigenaresse">
     </div>
 </section>
 
