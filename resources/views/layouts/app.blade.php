@@ -56,14 +56,13 @@
         </nav>
             <!-- Page Heading -->
             <header>
-                <div class="header-title">
-                    <h1>{{$titel}}</h1>
-                    {{-- <!-- @include('partials._navigatie', ['vakken' => $vakken]) --> --}}
-                </div>
                 <div class="header-background">
                     <img src="{{asset('assets/'.$foto)}}" alt="{{$titel}}">
                 </div>
             </header>
+            <div class="header-title">
+                <h1>{{$titel}}</h1>
+            </div>
             <!-- Page Content -->
             <main>
                 <div class="container">
