@@ -5,7 +5,6 @@ document
     .addEventListener("click", toggleVisibility);
 
 function toggleVisibility() {
-    console.log("Toggle visibility");
     let element = document.querySelector("#nav-menu-list-element");
     if (element.classList.contains("hidden")) {
         element.classList.remove("hidden");
@@ -105,16 +104,16 @@ document.querySelectorAll(".behandeling").forEach((checkbox) => {
 let behandelingen = [];
 
 function addToList(event) {
-    console.log("Selected value:", event.target.value);
+    // console.log("Selected value:", event.target.value);
     behandelingen.push(event.target.value);
     // behandelingen.map((behandeling) => {
     //     console.log(behandeling);
     // });
 }
 
-document.getElementById("opmerkingen").addEventListener("change", function (event) {
-    console.log("Opmerkingen:", event.target.value);
-});
+// document.getElementById("opmerkingen").addEventListener("change", function (event) {
+//     console.log("Opmerkingen:", event.target.value);
+// });
 
 document.querySelector("#send-message").addEventListener("click", sendMessage);
 
@@ -124,12 +123,12 @@ function sendMessage() {
     console.log("Send message");
     let naam = document.getElementById("naam").value;
     let opmerkingen = document.getElementById("opmerkingen_value").value;
-    console.log("Naam:", naam);
-    console.log("Opmerkingen:", opmerkingen);
-    console.log("Behandelingen:");
-    behandelingen.map((behandeling) => {
-        console.log(behandeling);
-    });
+    // console.log("Naam:", naam);
+    // console.log("Opmerkingen:", opmerkingen);
+    // console.log("Behandelingen:");
+    // behandelingen.map((behandeling) => {
+    //     console.log(behandeling);
+    // });
 
     let behandelingenstring;
 
