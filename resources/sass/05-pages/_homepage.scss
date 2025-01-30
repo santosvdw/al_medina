@@ -259,9 +259,19 @@
     }
 }
 
+.cta-buttons {
+    position: absolute;
+    z-index: 100;
+    top: 75vh;
+    display: flex;
+    width: 100vw;
+    gap: 2rem;
+    justify-content: center;
+}
 main.home-main {
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
+
 }

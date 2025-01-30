@@ -13,15 +13,22 @@
 }
 
 @media screen and (max-width: 799px) {
-    nav .nav-links {
-        &.mobile {
-            display: flex;
-        }
+    .regular nav .small-starline img{
+        transform: scale(0.7);
+    }
+    nav  {
 
-        &.desktop {
-            display: none;
+        .nav-links {
+            &.mobile {
+                display: flex;
+            }
+
+            &.desktop {
+                display: none;
+            }
         }
     }
+}
 
     .home {
         nav {
@@ -31,6 +38,11 @@
                         height: 100vh;
                         width: 100vw;
                         flex-flow: column wrap;
+                        color: $black;
+
+                        ul li a.black-link, ul li a.black-link i {
+                            color: $black;
+                        }
 
                         background-color: $secondary;
 
@@ -68,7 +80,7 @@
         }
     }
     }
-}
+
 
 .regular {
     nav {
@@ -174,6 +186,7 @@
     position: absolute;
     display: flex;
     flex-flow: column wrap;
+    color: $black;
     align-items: center;
     z-index: 1;
     top: calc($text-6 * 6);

@@ -11,9 +11,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="{{asset('assets/favicon.png')}}" type="image/png">
-    <link rel="stylesheet" href="/build/assets/app-B6uQKN3Z.css">
-    <script src="/build/assets/app-Bb-62klp.js" defer></script>
-    {{-- @vite(['resources/sass/app.scss', 'resources/js/app.js']) --}}
+    {{-- <link rel="stylesheet" href="/build/assets/app.css"> --}}
+    {{-- <script src="/build/assets/app.js" defer></script> --}}
+    @vite(['resources/sass/app.scss', 'resources/js/app.js']) 
     {{-- <link rel="stylesheet" href="{{asset('assets/test.css')}}"> --}}
 </head>
 <body>
@@ -24,6 +24,7 @@
         <nav id="home">
             <div class="nav-links desktop">
                 <ul>
+                    <li><a href="/">Home</a></li>
                     <li><a href="/cupping">Cupping</a></li>
                     <li><a href="/hijama">Hijama</a></li>
                     <li><a href="/massages">Massages</a></li>
@@ -40,17 +41,17 @@
                 </div>
                 <div class="nav-menu-list hidden" id="nav-menu-list-element">
                     <ul>
-                        <li><a href="/cupping">Cupping</a></li>
-                        <li><a href="/hijama">Hijama</a></li>
-                        <li><a href="/massages">Massages</a></li>
-                        <li><a href="/tarieven">Tarieven</a></li>
-                        <li><a href="/over_ons">Over ons</a></li>
-                        <li><a href="/contact">Contact</a></li>
+                        <li><a class="black-link" href="/cupping">Cupping</a></li>
+                        <li><a class="black-link" href="/hijama">Hijama</a></li>
+                        <li><a class="black-link" href="/massages">Massages</a></li>
+                        <li><a class="black-link" href="/tarieven">Tarieven</a></li>
+                        <li><a class="black-link" href="/over_ons">Over ons</a></li>
+                        <li><a class="black-link" href="/contact">Contact</a></li>
                     </ul>
                     <ul class="icons">
                         <li>
-                            <a href="/https://www.instagram.com/cuppingalmedina/"><i class="bi bi-instagram"></i></a>
-                            <a href="https://www.facebook.com/people/Cupping-Al-Medina/pfbid02za1YrvWuf9Ezy31Lshf2mVZiihRL2nCU3NbrEbbP4YPA1NrZPxku1W3ReBodTgohl/"><i class="bi bi-facebook"></i></a>
+                            <a class="black-link" href="/https://www.instagram.com/cuppingalmedina/"><i class="bi bi-instagram"></i></a>
+                            <a class="black-link" href="https://www.facebook.com/people/Cupping-Al-Medina/pfbid02za1YrvWuf9Ezy31Lshf2mVZiihRL2nCU3NbrEbbP4YPA1NrZPxku1W3ReBodTgohl/"><i class="bi bi-facebook"></i></a>
                         </li>
                     </ul>
                 </div>
@@ -68,6 +69,9 @@
             <div class="header-img"><img src="{{asset('assets/background-header.png')}}" alt="Foto van een woestijn"></div>
             <div class="lower-gradient"></div>
         </div>
+        <section class="cta-buttons">
+            <a href="#contact"><button>Afspraak maken</button></a><a href="/tarieven"><button>Tarieven bekijken</button></a>
+        </section>
     </div>
     <main class="home-main">
         <section class="quote">
