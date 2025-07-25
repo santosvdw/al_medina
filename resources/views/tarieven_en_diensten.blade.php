@@ -94,7 +94,7 @@
         <h5 id="hotstone_massage">Hotstone massage</h5>
         <p>Een verwarmende massage die helpt bij het losmaken van diepe spierlagen en het verminderen van stress. De hotstone-massage is vooral effectief voor mensen met stijve spieren en spanning.</p>
         <br>
-        <h5 id="oorkaarsen">Oorkarsen</h5>
+        <h5 id="oorkaarsen">Oorkaarsen</h5>
         <p>Oorkaarsentherapie bevordert ontspanning en kan helpen bij het verlichten van druk in de sinussen en het verbeteren van de algemene oorgezondheid.</p>
         <br>
         <h5 id="cupping_massage">Cupping massage</h5>
@@ -125,24 +125,24 @@
             <tr>
                 <td class="colspan-3">Hijama op maat -
                 10 cups</td>
-                <td class="emphasize">&euro;35</td>
-            </tr>
-            <tr>
-                <td class="colspan-3">Hijama op maat -
-                15 cups</td>
                 <td class="emphasize">&euro;40</td>
             </tr>
             <tr>
                 <td class="colspan-3">Hijama op maat -
-                20 cups</td>
+                15 cups</td>
                 <td class="emphasize">&euro;45</td>
+            </tr>
+            <tr>
+                <td class="colspan-3">Hijama op maat -
+                20 cups</td>
+                <td class="emphasize">&euro;50</td>
             </tr>
         </table>
         <br>
         <table border-collapse="collapse">
             <tr>
                 <td class="colspan-3">*Extra cupping-massage module</td>
-                <td class="emphasize">&euro;10</td>
+                <td class="emphasize">&euro;15</td>
             </tr>
         </tbody>
     </table>
@@ -152,7 +152,7 @@
         <tbody>
             <tr>
                 <td class="colspan-3">Hijama hoofdbehandeling</td>
-                <td class="emphasize">&euro;35</td>
+                <td class="emphasize">&euro;40</td>
             </tr>
         </tbody>
     </table>
@@ -162,15 +162,15 @@
         <tbody>
             <tr>
                 <td class="colspan-3">Algemene reiniging met cupping massage</td>
-                <td class="emphasize">&euro;40</td>
+                <td class="emphasize">&euro;45</td>
             </tr>
             <tr>
                 <td class="colspan-3">Orgaanreiniging met cupping massage</td>
-                <td class="emphasize">&euro;40</td>
+                <td class="emphasize">&euro;45</td>
             </tr>
             <tr>
                 <td class="colspan-3">Reiniging lymfatisch systeem met cupping massage</td>
-                <td class="emphasize">&euro;45</td>
+                <td class="emphasize">&euro;50</td>
             </tr>
         </tbody>
     </table>
@@ -180,11 +180,11 @@
         <tbody>
             <tr>
                 <td class="colspan-3">Dry cupping</td>
-                <td class="emphasize">&euro;35</td>
+                <td class="emphasize">&euro;40</td>
             </tr>
             <tr>
                 <td class="colspan-3">Dry cupping met massage module</td>
-                <td class="emphasize">&euro;35</td>
+                <td class="emphasize">&euro;40</td>
             </tr>
         </tbody>
     </table>
@@ -194,11 +194,11 @@
         <tbody>
             <tr>
                 <td class="colspan-3">Hijama ontspanning met hotstone-beleving</td>
-                <td class="emphasize">&euro;45</td>
+                <td class="emphasize">&euro;50</td>
             </tr>
             <tr>
                 <td class="colspan-3">Dry-cupping ontspanning met hotstone-beleving</td>
-                <td class="emphasize">&euro;45</td>
+                <td class="emphasize">&euro;50</td>
             </tr>
         </tbody>
     </table>

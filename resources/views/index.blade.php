@@ -11,10 +11,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="{{asset('assets/favicon.png')}}" type="image/png">
-    {{-- <link rel="stylesheet" href="/build/assets/app.css"> --}}
-    {{-- <script src="/build/assets/app.js" defer></script> --}}
+    {{-- <link rel="stylesheet" href="/build/assets/app.css">
+    <script src="/build/assets/app.js" defer></script> --}}
+<!-- HTML Meta Tags -->
+<meta name="description" content="Al Medina | Hijama, cupping en massages | De beste kliniek voor hijama, cupping en massages van heel Noord-Holland.">
+
+<!-- Facebook Meta Tags -->
+<meta property="og:url" content="https://cuppingalmedina.nl">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Al Medina | Hijama, cupping en massages">
+<meta property="og:description" content="Al Medina | Hijama, cupping en massages | De beste kliniek voor hijama, cupping en massages van heel Noord-Holland.">
+<meta property="og:image" content="https://opengraph.b-cdn.net/production/images/e7d68512-8677-4fe5-a8b8-99033c0f5068.png?token=LDkk9OhV8es0nMNu_SGMYG5PEt1AQZ3EvGpJqCPyZ6E&height=542&width=1200&expires=33275531493">
+
+<!-- Twitter Meta Tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta property="twitter:domain" content="cuppingalmedina.nl">
+<meta property="twitter:url" content="https://cuppingalmedina.nl">
+<meta name="twitter:title" content="Al Medina | Hijama, cupping en massages">
+<meta name="twitter:description" content="Al Medina | Hijama, cupping en massages | De beste kliniek voor hijama, cupping en massages van heel Noord-Holland.">
+<meta name="twitter:image" content="https://opengraph.b-cdn.net/production/images/e7d68512-8677-4fe5-a8b8-99033c0f5068.png?token=LDkk9OhV8es0nMNu_SGMYG5PEt1AQZ3EvGpJqCPyZ6E&height=542&width=1200&expires=33275531493">
+
+<!-- Meta Tags Generated via https://www.opengraph.xyz -->
     @vite(['resources/sass/app.scss', 'resources/js/app.js']) 
-    {{-- <link rel="stylesheet" href="{{asset('assets/test.css')}}"> --}}
+    <link rel="stylesheet" href="{{asset('assets/test.css')}}">
 </head>
 <body>
 
@@ -29,6 +48,7 @@
                     <li><a href="/hijama">Hijama</a></li>
                     <li><a href="/massages">Massages</a></li>
                     <li><a href="/tarieven">Tarieven</a></li>
+                    <li><a href="/habba_sawda">Habba Sawda</a></li>
                     <li><a href="/over_ons">Over ons</a></li>
                     <li><a href="/contact">Contact</a></li>
                 </ul>
@@ -45,6 +65,7 @@
                         <li><a class="black-link" href="/hijama">Hijama</a></li>
                         <li><a class="black-link" href="/massages">Massages</a></li>
                         <li><a class="black-link" href="/tarieven">Tarieven</a></li>
+                        <li><a class="black-link" href="/habba_sawda">Habba Sawda</a></li>
                         <li><a class="black-link" href="/over_ons">Over ons</a></li>
                         <li><a class="black-link" href="/contact">Contact</a></li>
                     </ul>
@@ -175,6 +196,7 @@
                     <button type="button" id="send-message" onclick="sendMessage()" class="italic small-button black"><i class="bi bi-whatsapp"></i> Bericht versturen via whatsapp</button>                 </span> --}}
                 <button type="button" id="send-message" onclick="sendMessage()" class="italic whatsapp-btn"><i class="bi bi-whatsapp"></i> Bericht versturen via whatsapp</button>
                 {{-- <button id="send-message" onclick="sendMessage()" class="italic whatsapp-btn"><i class="bi bi-whatsapp"></i><span>Bericht versturen via whatsapp</span></button> --}}
+                <p style="text-align:center;"><br>Of:<br><a style="text-decoration:none;" href="https://cuppingalmedina.simplybook.it/v2/#book"><button type="button" {--id="send-message" onclick="sendMessage()"--} class="italic whatsapp-btn"><i class="bi bi-calendar-date"></i>Maak direct een afspraak</button></a></p>
             </form>
             <div class="contact-decor">
                 <img src="{{asset('assets/side-decor.png')}}" alt="">

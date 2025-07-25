@@ -12,6 +12,7 @@
             width: 100vw;
             background-color: $primary;
             overflow: hidden;
+            background-color: #ba945a;
             height: inherit;
             display: flex;
             justify-content: center;
@@ -22,8 +23,9 @@
 
             img {
                 width: 100%;
-                // opacity: 0.5;
-                // filter: blur(3px);
+                // min-height: 100%;
+                opacity: 0.5;
+                filter: blur(3px);
                 flex-shrink: 0;
             }
         }

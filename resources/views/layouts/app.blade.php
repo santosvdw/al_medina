@@ -15,8 +15,27 @@
         <link rel="shortcut icon" href="{{asset('assets/favicon.png')}}" type="image/png">
          {{-- @vite(['resources/sass/app.scss', 'resources/js/app.js']) --}}
 
-        <link rel="stylesheet" href="/build/assets/app-B6uQKN3Z.css">
-        <script src="/build/assets/app-Bb-62klp.js" defer></script>
+        <link rel="stylesheet" href="/build/assets/app.css">
+        <script src="/build/assets/app.js" defer></script>
+<!-- HTML Meta Tags -->
+<meta name="description" content="Al Medina | Hijama, cupping en massages | De beste kliniek voor hijama, cupping en massages van heel Noord-Holland.">
+
+<!-- Facebook Meta Tags -->
+<meta property="og:url" content="https://cuppingalmedina.nl">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Al Medina | Hijama, cupping en massages">
+<meta property="og:description" content="Al Medina | Hijama, cupping en massages | De beste kliniek voor hijama, cupping en massages van heel Noord-Holland.">
+<meta property="og:image" content="https://opengraph.b-cdn.net/production/images/e7d68512-8677-4fe5-a8b8-99033c0f5068.png?token=LDkk9OhV8es0nMNu_SGMYG5PEt1AQZ3EvGpJqCPyZ6E&height=542&width=1200&expires=33275531493">
+
+<!-- Twitter Meta Tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta property="twitter:domain" content="cuppingalmedina.nl">
+<meta property="twitter:url" content="https://cuppingalmedina.nl">
+<meta name="twitter:title" content="Al Medina | Hijama, cupping en massages">
+<meta name="twitter:description" content="Al Medina | Hijama, cupping en massages | De beste kliniek voor hijama, cupping en massages van heel Noord-Holland.">
+<meta name="twitter:image" content="https://opengraph.b-cdn.net/production/images/e7d68512-8677-4fe5-a8b8-99033c0f5068.png?token=LDkk9OhV8es0nMNu_SGMYG5PEt1AQZ3EvGpJqCPyZ6E&height=542&width=1200&expires=33275531493">
+
+<!-- Meta Tags Generated via https://www.opengraph.xyz -->
     </head>
     <body class="regular">
         <!--Page navigation -->
@@ -27,11 +46,11 @@
             <span class="small-starline"><img src="{{asset('assets/small_starline.png')}}" alt="--+--"></span>
             <div class="nav-links desktop">
                 <ul>
-                    <li><a href="/">Home</a></li>
                     <li><a href="/cupping">Cupping</a></li>
                     <li><a href="/hijama">Hijama</a></li>
                     <li><a href="/massages">Massages</a></li>
                     <li><a href="/tarieven">Tarieven</a></li>
+                    <li><a href="/habba_sawda">Habba Sawda</a></li>
                     <li><a href="/over_ons">Over ons</a></li>
                     <li><a href="/contact">Contact</a></li>
                 </ul>
@@ -44,10 +63,12 @@
                 </div>
                 <div class="nav-menu-list hidden" id="nav-menu-list-element">
                     <ul>
+                        <li><a href="/">Home</a></li>
                         <li><a href="/cupping">Cupping</a></li>
                         <li><a href="/hijama">Hijama</a></li>
                         <li><a href="/massages">Massages</a></li>
                         <li><a href="/tarieven">Tarieven</a></li>
+                        <li><a href="/habba_sawda">Habba Sawda</a></li>
                         <li><a href="/over_ons">Over ons</a></li>
                         <li><a href="/contact">Contact</a></li>
                         <li>

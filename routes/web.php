@@ -10,7 +10,7 @@ Route::get('/', function () {
 Route::get('/cupping', function () {
     return view('cupping', [
         "titel" => "Cupping",
-        "foto" => "image.png",
+        "foto" => "background-image.webp",
     ]);
 });
 
@@ -45,7 +45,14 @@ Route::get('/massages', function () {
 Route::get('/template', function () {
     return view('template', [
         "titel" => "Template",
-        "foto" => "background-regular.png",
+        "foto" => "background-image.webp",
+    ]);
+});
+
+Route::get('/habba_sawda', function () {
+    return view('habba_sawda', [
+        "titel" => "Habba Sawda",
+        "foto" => "background-image.webp",
     ]);
 });
 
@@ -59,7 +66,7 @@ Route::get('/tarieven', function () {
 Route::get('/faq', function () {
     return view('faq', [
         "titel" => "Veelgestelde vragen",
-        "foto" => "image.png",
+        "foto" => "background-image.webp",
     ]);
 });
 
